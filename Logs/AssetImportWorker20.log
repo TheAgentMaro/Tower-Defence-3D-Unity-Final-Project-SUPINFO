@@ -1,0 +1,451 @@
+Using pre-set license
+Built from '2022.2/release' branch; Version is '2022.2.2f1 (c93c5d3acf5b) revision 13188189'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit ProfessionalEducation' Language: 'fr' Physical Memory: 32099 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.2.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker20
+-projectPath
+C:/Users/marwe/Downloads/Tower-Defence-main/Tower-Defence-main
+-logFile
+Logs/AssetImportWorker20.log
+-srvPort
+49764
+Successfully changed project path to: C:/Users/marwe/Downloads/Tower-Defence-main/Tower-Defence-main
+C:/Users/marwe/Downloads/Tower-Defence-main/Tower-Defence-main
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [36296] Host "[IP] 169.254.224.64 [Port] 0 [Flags] 2 [Guid] 3868241922 [EditorId] 3868241922 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-TNQ11OOM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [36296] Host "[IP] 169.254.224.64 [Port] 0 [Flags] 2 [Guid] 3868241922 [EditorId] 3868241922 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-TNQ11OOM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 10.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.2.2f1 (c93c5d3acf5b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.2.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/marwe/Downloads/Tower-Defence-main/Tower-Defence-main/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Laptop GPU (ID=0x25a2)
+    Vendor:   NVIDIA
+    VRAM:     3977 MB
+    Driver:   31.0.15.2849
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.2.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.2.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007079 seconds.
+- Loaded All Assemblies, in  0.359 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.289 seconds
+Domain Reload Profiling:
+	ReloadAssembly (223ms)
+		BeginReloadAssembly (92ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (128ms)
+				TypeCache.Initialize (127ms)
+					TypeCache.ScanAssembly (126ms)
+				ResolveRequiredComponents (1ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (224ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (152ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.557 seconds
+Refreshing native plugins compatible for Editor in 2.27 ms, found 2 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.507 seconds
+Domain Reload Profiling:
+	ReloadAssembly (244ms)
+		BeginReloadAssembly (127ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		LoadAllAssembliesAndSetupDomain (310ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (282ms)
+				TypeCache.Initialize (222ms)
+					TypeCache.ScanAssembly (218ms)
+				ResolveRequiredComponents (2ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (358ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (251ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 6.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1737 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (56.9 KB). Loaded Objects now: 2208.
+Memory consumption went from 289.8 MB to 289.7 MB.
+Total: 6.585600 ms (FindLiveObjects: 0.364700 ms CreateObjectMapping: 0.098000 ms MarkObjects: 5.996800 ms  DeleteObjects: 0.124400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 161124.625782 seconds.
+  path: Assets/objects/Art/Materials/LowPoly Environment Pack/Prefabs/Rock_2.prefab
+  artifactKey: Guid(4983f395b2610de4e9f688a87bbd9af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Materials/LowPoly Environment Pack/Prefabs/Rock_2.prefab using Guid(4983f395b2610de4e9f688a87bbd9af9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb72ab4a418cef8a0a0265e026cd63c') in 0.151621 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket12_Yellow.prefab
+  artifactKey: Guid(0a4e3ee3c4c99bf41942f0140f878a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket12_Yellow.prefab using Guid(0a4e3ee3c4c99bf41942f0140f878a92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f9b5a5a5aa22a74714ff9884d39e2d') in 0.021320 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket14_Pink.prefab
+  artifactKey: Guid(3abc4a41db905ca4799691d94d6d5523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket14_Pink.prefab using Guid(3abc4a41db905ca4799691d94d6d5523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18766c0d04b92810a3f6d657163ce899') in 0.021368 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Green/Rocket14_Green.prefab
+  artifactKey: Guid(116d68e46e9bf7344b29b58979daba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Green/Rocket14_Green.prefab using Guid(116d68e46e9bf7344b29b58979daba31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca71d6a18e7a6117ff6bedd9da1c07ff') in 0.020024 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket10_Pink.prefab
+  artifactKey: Guid(483b583041ee0ea4e80e85dd9e85540e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket10_Pink.prefab using Guid(483b583041ee0ea4e80e85dd9e85540e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e26cbc9b1963224599eb6ba7280c05') in 0.016645 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket09_Red.prefab
+  artifactKey: Guid(930cc3f14bc84554f8048c12ee59326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket09_Red.prefab using Guid(930cc3f14bc84554f8048c12ee59326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e003f5c033b47641fe661fd34565ad6') in 0.030074 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket16_Orange.prefab
+  artifactKey: Guid(7725fcc222289db469c4f5c51126b73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket16_Orange.prefab using Guid(7725fcc222289db469c4f5c51126b73c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba60f5532d352754640c0a444d681091') in 0.019239 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket17_Yellow.prefab
+  artifactKey: Guid(f22d592187d995947a1a65385ce129f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket17_Yellow.prefab using Guid(f22d592187d995947a1a65385ce129f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f6ab13c5cdc7c7a394707831d7124d') in 0.016723 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket16_Yellow.prefab
+  artifactKey: Guid(2f8a7bfafa52273489ba55e558723308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket16_Yellow.prefab using Guid(2f8a7bfafa52273489ba55e558723308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a72bc77063b70a96c08f65691e0e74f5') in 0.010896 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket14_Grey.prefab
+  artifactKey: Guid(88e79225bfe7b544391cb2b5fb20164c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket14_Grey.prefab using Guid(88e79225bfe7b544391cb2b5fb20164c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275692d64fb6a0646ae0c19552d9b962') in 0.012774 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket15_Grey.prefab
+  artifactKey: Guid(e7ea29554e0ecca4991c27160bb10eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket15_Grey.prefab using Guid(e7ea29554e0ecca4991c27160bb10eab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b3be970c19669767d5bae43b915e361') in 0.013473 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket02_Yellow.prefab
+  artifactKey: Guid(6cbf0ce76b5f16249adbf6d3d6590d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket02_Yellow.prefab using Guid(6cbf0ce76b5f16249adbf6d3d6590d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c5556b19472b7e33b17e4e57313a7f') in 0.011946 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket13_Pink.prefab
+  artifactKey: Guid(e806cbe86b37d5143add5e4086f28161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket13_Pink.prefab using Guid(e806cbe86b37d5143add5e4086f28161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f219a0e1e97a630ae8de442f82b6028') in 0.016075 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket01_Orange.prefab
+  artifactKey: Guid(ffee8fe0d435dcc4da48ea457e70ca98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket01_Orange.prefab using Guid(ffee8fe0d435dcc4da48ea457e70ca98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f0f564f3b8709270d5c82448627503') in 0.011916 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket14_Yellow.prefab
+  artifactKey: Guid(881d8152932493444ba60e3f5ca324c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket14_Yellow.prefab using Guid(881d8152932493444ba60e3f5ca324c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c4dd8de6530fdfa762ac339b8d76f7a') in 0.011804 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket13_Orange.prefab
+  artifactKey: Guid(94afc8ab8b2d67c4992c20ccacf9cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket13_Orange.prefab using Guid(94afc8ab8b2d67c4992c20ccacf9cc2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6b8065dc2b9ae014164652e20841d14') in 0.011570 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket17_Red.prefab
+  artifactKey: Guid(14c6510220a5c9948b67eec479577196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket17_Red.prefab using Guid(14c6510220a5c9948b67eec479577196) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa5453b359210cbe5c43b0a97582b02') in 0.012941 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket01_Yellow.prefab
+  artifactKey: Guid(0d686735bf3955e4d89fce1610683f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket01_Yellow.prefab using Guid(0d686735bf3955e4d89fce1610683f6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffdfca4ed5b50ea8a09ca34d72ad68bb') in 0.011357 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket12_Red.prefab
+  artifactKey: Guid(dc46eb4c552efd343936da67692d8064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket12_Red.prefab using Guid(dc46eb4c552efd343936da67692d8064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7b7526c142c8c7064f9219fde192b6') in 0.027492 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket05_Grey.prefab
+  artifactKey: Guid(9132b6edd9178b943986a049d9e3c590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket05_Grey.prefab using Guid(9132b6edd9178b943986a049d9e3c590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af6d78690dc9be9ae37dc57106f4b8fc') in 0.014692 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket14_Orange.prefab
+  artifactKey: Guid(e608f4762f9f53f46bf8e6b99a73d573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket14_Orange.prefab using Guid(e608f4762f9f53f46bf8e6b99a73d573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d75f2bed4f210431a840b678e8f2142') in 0.010166 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.864585 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket19_Orange.prefab
+  artifactKey: Guid(78f7987b049fc404f9f86fecff4add23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket19_Orange.prefab using Guid(78f7987b049fc404f9f86fecff4add23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a38934c366e1546890fdc593055e641') in 0.012514 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket19_Red.prefab
+  artifactKey: Guid(24baf2ca3b369a64b999258f8731be6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Red/Rocket19_Red.prefab using Guid(24baf2ca3b369a64b999258f8731be6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78080ebe088f821b1d12d26b64130534') in 0.015504 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket19_Yellow.prefab
+  artifactKey: Guid(b3f605f74025b69479fd3f3bc558539f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket19_Yellow.prefab using Guid(b3f605f74025b69479fd3f3bc558539f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc358f13bd0918afedee16c72bfe3ab') in 0.011064 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.053222 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket20_Yellow.prefab
+  artifactKey: Guid(f2a012c9a5312dc46a3d14cbf61eba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket20_Yellow.prefab using Guid(f2a012c9a5312dc46a3d14cbf61eba5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd425f8ada0d54c882f1485de0755759') in 0.012698 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket21_Pink.prefab
+  artifactKey: Guid(9264447870e2fcf4c9e6bf6e0d23c4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket21_Pink.prefab using Guid(9264447870e2fcf4c9e6bf6e0d23c4a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a3113ef664ff5542f40a86547922a3') in 0.012252 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.895396 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket22_Orange.prefab
+  artifactKey: Guid(b84df8667f779444bb25458df152e4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket22_Orange.prefab using Guid(b84df8667f779444bb25458df152e4e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d01c5f6a5f185cea9521da3ffb4ebe8') in 0.012928 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket23_Orange.prefab
+  artifactKey: Guid(45fc27cac2fc6024e930c5380b019f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Orange/Rocket23_Orange.prefab using Guid(45fc27cac2fc6024e930c5380b019f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b389f31d92e72eae505178bd52026a87') in 0.013475 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket25_Grey.prefab
+  artifactKey: Guid(ec83c4e9a9128c847ae82d569a85f7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket25_Grey.prefab using Guid(ec83c4e9a9128c847ae82d569a85f7e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3fe92e155d829030ac3649e43563bd3') in 0.015730 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket27_Yellow.prefab
+  artifactKey: Guid(ddaebb2b451033e4492ae0180b37f959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket27_Yellow.prefab using Guid(ddaebb2b451033e4492ae0180b37f959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf209ad9daf5b9098882ebc95938fae5') in 0.014956 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket24_Grey.prefab
+  artifactKey: Guid(fd60628870817c04dad5c05854570b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket24_Grey.prefab using Guid(fd60628870817c04dad5c05854570b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5adc9570e6202cc3a620dcb93e6ba6e') in 0.013678 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket23_Yellow.prefab
+  artifactKey: Guid(f57b6d792fb98be48a5d28577fdc040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Yellow/Rocket23_Yellow.prefab using Guid(f57b6d792fb98be48a5d28577fdc040c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2364a245d416860564d76d54236225') in 0.026992 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Green/Rocket24_Green.prefab
+  artifactKey: Guid(80dfea31dc618bd479acd1b576720970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Green/Rocket24_Green.prefab using Guid(80dfea31dc618bd479acd1b576720970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '546ebcc2f66fc586022fa84fd039eaa7') in 0.013935 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket26_Pink.prefab
+  artifactKey: Guid(bf302e4931c648246b94bf2e074ddb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Pink/Rocket26_Pink.prefab using Guid(bf302e4931c648246b94bf2e074ddb14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67d34aa56bca4235c62564dc6be9723b') in 0.013100 seconds 
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket28_Grey.prefab
+  artifactKey: Guid(e46491d19bf932a4080a750d4b34207e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/objects/Art/Projectiles/Rockets Missiles and Bombs/Prefabs/Grey/Rocket28_Grey.prefab using Guid(e46491d19bf932a4080a750d4b34207e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '380d8cc40512d1f17cd48819888ae77e') in 0.012269 seconds 
+Number of asset objects unloaded after import = 9
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
