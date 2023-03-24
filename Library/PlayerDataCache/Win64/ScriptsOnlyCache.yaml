@@ -24,13 +24,17 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEditor.UI.dll:
+    - UnityEditor.UI.ImageEditor
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -58,7 +62,19 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.SpriteState
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: CreditsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: LobbyButton
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: MenuButton
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: MenuButton
   sceneClasses:
     "Assets/Scenes/Cr\xE9dits.unity":
     - Class: 1
@@ -95,6 +111,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 3036}
     - Class: 114
       Script: {instanceID: 3138}
+    - Class: 114
+      Script: {instanceID: 3154}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -235,6 +253,59 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Lobby.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1518}
+    - Class: 114
+      Script: {instanceID: 2170}
+    - Class: 114
+      Script: {instanceID: 2506}
+    - Class: 114
+      Script: {instanceID: 2624}
+    - Class: 114
+      Script: {instanceID: 2822}
+    - Class: 114
+      Script: {instanceID: 3036}
+    - Class: 114
+      Script: {instanceID: 3138}
+    - Class: 114
+      Script: {instanceID: 3154}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -928,7 +999,8 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
-  - "Assets/Scenes/Cr\xE9dits.unity"
+  - Assets/Scenes/Lobby.unity
   - Assets/Scenes/Game.unity
   - Assets/Scenes/Parametre.unity
+  - "Assets/Scenes/Cr\xE9dits.unity"
   playerPath: C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO/SupinfoTD.exe

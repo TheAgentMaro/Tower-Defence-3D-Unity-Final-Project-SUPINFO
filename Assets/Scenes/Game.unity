@@ -19268,16 +19268,20 @@ MonoBehaviour:
   - enemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f, type: 3}
     count: 30
     rate: 4
-  - enemie: {fileID: 1919012471076396, guid: 49195f24e4b97204694956b58558624e, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
+      type: 3}
     count: 10
     rate: 1
-  - enemie: {fileID: 1975194375736644, guid: 0499ce1c9d5fbcf4c925e1a71f2cd794, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
+      type: 3}
     count: 1
     rate: 1
-  - enemie: {fileID: 1919012471076396, guid: 49195f24e4b97204694956b58558624e, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
+      type: 3}
     count: 50
     rate: 1
-  - enemie: {fileID: 1111084942782338, guid: a571fffca0428cb43beb8ec0b9803529, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
+      type: 3}
     count: 5
     rate: 1
   - enemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f, type: 3}
@@ -19286,56 +19290,71 @@ MonoBehaviour:
   - enemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f, type: 3}
     count: 40
     rate: 5
-  - enemie: {fileID: 1774625739149480, guid: 9bef512ac330172438777b84dead24cc, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
+      type: 3}
     count: 30
     rate: 3
-  - enemie: {fileID: 1774625739149480, guid: 9bef512ac330172438777b84dead24cc, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
+      type: 3}
     count: 40
     rate: 5
-  - enemie: {fileID: 1111084942782338, guid: a571fffca0428cb43beb8ec0b9803529, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
+      type: 3}
     count: 10
     rate: 2
-  - enemie: {fileID: 1111084942782338, guid: a571fffca0428cb43beb8ec0b9803529, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
+      type: 3}
     count: 15
     rate: 2
-  - enemie: {fileID: 1774625739149480, guid: 9bef512ac330172438777b84dead24cc, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
+      type: 3}
     count: 80
     rate: 5
   - enemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f, type: 3}
     count: 100
     rate: 10
-  - enemie: {fileID: 1713781036754730, guid: 8321533faf15f934f882c8cb2e901633, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
+      type: 3}
     count: 50
     rate: 5
-  - enemie: {fileID: 1774625739149480, guid: 9bef512ac330172438777b84dead24cc, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
+      type: 3}
     count: 100
     rate: 10
-  - enemie: {fileID: 1111084942782338, guid: a571fffca0428cb43beb8ec0b9803529, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
+      type: 3}
     count: 30
     rate: 3
-  - enemie: {fileID: 1975194375736644, guid: 0499ce1c9d5fbcf4c925e1a71f2cd794, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
+      type: 3}
     count: 1
     rate: 1
-  - enemie: {fileID: 1713781036754730, guid: 8321533faf15f934f882c8cb2e901633, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
+      type: 3}
     count: 200
     rate: 20
   - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
       type: 3}
     count: 40
     rate: 4
-  - enemie: {fileID: 1975194375736644, guid: 0499ce1c9d5fbcf4c925e1a71f2cd794, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
+      type: 3}
     count: 5
     rate: 1
-  - enemie: {fileID: 1774625739149480, guid: 9bef512ac330172438777b84dead24cc, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
+      type: 3}
     count: 200
     rate: 10
-  - enemie: {fileID: 1713781036754730, guid: 8321533faf15f934f882c8cb2e901633, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
+      type: 3}
     count: 200
     rate: 15
-  - enemie: {fileID: 1975194375736644, guid: 0499ce1c9d5fbcf4c925e1a71f2cd794, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
+      type: 3}
     count: 10
     rate: 1
-  - enemie: {fileID: 1975194375736644, guid: 0499ce1c9d5fbcf4c925e1a71f2cd794, type: 3}
+  - enemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
+      type: 3}
     count: 50
     rate: 2
   timeBwaves: 2
