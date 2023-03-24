@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/Cr\xE9dits.unity"
+- path: Assets/Scenes/Parametre.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
