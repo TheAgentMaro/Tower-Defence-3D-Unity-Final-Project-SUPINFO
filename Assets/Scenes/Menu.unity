@@ -409,9 +409,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2032974040}
+      - m_Target: {fileID: 102900000, guid: 93eb4f6a59e1b96499e3c10f0625eb04, type: 3}
         m_TargetAssemblyTypeName: 
-        m_MethodName: Play
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
