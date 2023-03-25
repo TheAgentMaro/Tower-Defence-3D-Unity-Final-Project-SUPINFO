@@ -6,6 +6,6 @@ public class moneyUI : MonoBehaviour
     public Text moneyText;
     void Update()
     {
-        moneyText.text ="croquettes : " + playerstats.money.ToString();
+        moneyText.text ="Argent: " + playerstats.money.ToString();
     }
 }

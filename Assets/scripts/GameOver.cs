@@ -7,7 +7,7 @@ public class GameOver : MonoBehaviour
     public string Menu="Menu";
     void OnEnable()
     {
-        roundsText.text = playerstats.rounds.ToString()+" Rounds Survived";
+        roundsText.text = playerstats.rounds.ToString()+ " Rounds Survécu";
     }
     public void retry()
     {
