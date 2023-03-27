@@ -58,34 +58,36 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.2.2f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\scripts\playerstats.cs" />
-    <Compile Include="Assets\scripts\balle.cs" />
-    <Compile Include="Assets\scripts\CameraController.cs" />
-    <Compile Include="Assets\scripts\mainMenu.cs" />
-    <Compile Include="Assets\objects\Art\Enemy Stone Monster\StoneMonster\Script\Animation_Test.cs" />
-    <Compile Include="Assets\scripts\moneyUI.cs" />
-    <Compile Include="Assets\scripts\GameManager.cs" />
-    <Compile Include="Assets\scripts\pausemenu.cs" />
-    <Compile Include="Assets\objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
-    <Compile Include="Assets\scripts\GameOver.cs" />
-    <Compile Include="Assets\scripts\Waves.cs" />
-    <Compile Include="Assets\scripts\livesUI.cs" />
-    <Compile Include="Assets\scripts\BuildManager.cs" />
-    <Compile Include="Assets\objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
-    <Compile Include="Assets\scripts\nodes.cs" />
-    <Compile Include="Assets\scripts\tourelle.cs" />
-    <Compile Include="Assets\scripts\WaveSpawner.cs" />
-    <Compile Include="Assets\scripts\move.cs" />
-    <Compile Include="Assets\scripts\Shop.cs" />
-    <Compile Include="Assets\scripts\enemie.cs" />
-    <Compile Include="Assets\scripts\NodeUI.cs" />
-    <Compile Include="Assets\scripts\turretblueprint.cs" />
+    <Compile Include="Assets\Scripts\playerstats.cs" />
+    <Compile Include="Assets\Scripts\enemie.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\turretblueprint.cs" />
+    <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scripts\BuildManager.cs" />
+    <Compile Include="Assets\Scripts\SceneLoaderDropdowns.cs" />
+    <Compile Include="Assets\Scripts\moneyUI.cs" />
+    <Compile Include="Assets\Scripts\move.cs" />
+    <Compile Include="Assets\Scripts\NodeUI.cs" />
+    <Compile Include="Assets\Scripts\tourelle.cs" />
+    <Compile Include="Assets\Scripts\pausemenu.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Objects\Art\Enemy Stone Monster\StoneMonster\Script\Animation_Test.cs" />
+    <Compile Include="Assets\Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
+    <Compile Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
+    <Compile Include="Assets\Scripts\Waves.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\mainMenu.cs" />
+    <Compile Include="Assets\Scripts\balle.cs" />
+    <Compile Include="Assets\Scripts\nodes.cs" />
+    <Compile Include="Assets\Scripts\livesUI.cs" />
+    <Compile Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\objects\Art\Projectiles\Rockets Missiles and Bombs\READ ME.txt" />
-    <None Include="Assets\objects\Art\Buildings\low poly medieval buildings\readme.txt" />
-    <None Include="Assets\objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Fog and Ambient references.txt" />
-    <None Include="Assets\objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Readme.txt" />
+    <None Include="Assets\Objects\Art\Projectiles\Rockets Missiles and Bombs\READ ME.txt" />
+    <None Include="Assets\Objects\Art\Buildings\low poly medieval buildings\readme.txt" />
+    <None Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Fog and Ambient references.txt" />
+    <None Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Readme.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

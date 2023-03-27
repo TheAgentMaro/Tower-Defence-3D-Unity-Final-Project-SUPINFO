@@ -16,7 +16,7 @@ public class mainMenu : MonoBehaviour
 
     public void LobbyButton()
     {
-        SceneManager.LoadScene("Lobby");
+        SceneManager.LoadScene("LobbyGame");
     }
 
     public void MenuButton()
@@ -29,6 +29,30 @@ public class mainMenu : MonoBehaviour
         SceneManager.LoadScene("Parametre");
     }
 
+    public void LevelsLobby()
+    {
+        SceneManager.LoadScene("LevelsLobby");
+    }
+    public void GTDButton()
+    {
+        SceneManager.LoadScene("GGame");
+    }
+    public void GCTDButton()
+    {
+        SceneManager.LoadScene("GCGame");
+    }
+    public void Level2()
+    {
+        SceneManager.LoadScene("Leveles/Level2");
+    }
+    public void Level3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+    public void Level4()
+    {
+        SceneManager.LoadScene("Level4");
+    }
     public void Quit()
     {
         Application.Quit();
