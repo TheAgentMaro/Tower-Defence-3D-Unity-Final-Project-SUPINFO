@@ -28,6 +28,6 @@ public class GameManager : MonoBehaviour
     {
         gameoverUI.SetActive(true);
         end = true;
-
+        
     }
 }

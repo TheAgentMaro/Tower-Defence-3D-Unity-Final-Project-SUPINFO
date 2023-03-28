@@ -19331,7 +19331,7 @@ MonoBehaviour:
     rate: 1
   - enemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
       type: 3}
-    count: 200
+    count: 150
     rate: 20
   - enemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
       type: 3}
