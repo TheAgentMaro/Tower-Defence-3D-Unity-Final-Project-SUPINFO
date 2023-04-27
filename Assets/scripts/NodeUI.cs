@@ -2,13 +2,13 @@
 using UnityEngine.UI;
 public class NodeUI : MonoBehaviour
 {
-    private nodes target;
+    private Nodes target;
     public GameObject UI;
 
-    public Text upgradecost;
+    public Text upgradeCost;
     public Button upgradeButton;
 
-    public Text saleamount;
+    public Text sellAmount;
     public Button sellButton;
 
     public void hide()
@@ -17,22 +17,22 @@ public class NodeUI : MonoBehaviour
 
     }
 
-    public void setTarget(nodes targetf)
+    public void setTarget(Nodes targetf)
     {
         target = targetf;
         transform.position = target.transform.position + target.offset;
         if(target.upgradeLV != 0)
         {
-            upgradecost.text = "max level";
+            upgradeCost.text = "Level Max";
             upgradeButton.interactable = false;
-            saleamount.text="+" + Mathf.RoundToInt((float)((target.turretbp.cost + target.turretbp.upgradecost) * 0.4));
+            sellAmount.text="+" + Mathf.RoundToInt((float)((target.gameTurretbp.cost + target.gameTurretbp.upgradeCost) * 0.4));
         }
         else
         {
 
-            upgradecost.text = "- " + target.turretbp.upgradecost;
+            upgradeCost.text = "- " + target.gameTurretbp.upgradeCost;
             upgradeButton.interactable = true;
-            saleamount.text = "+" + Mathf.RoundToInt((float)((target.turretbp.cost) * 0.5));
+            sellAmount.text = "+" + Mathf.RoundToInt((float)((target.gameTurretbp.cost) * 0.5));
         }
 
         UI.SetActive(true);

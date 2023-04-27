@@ -1,11 +1,11 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 
-public class livesUI : MonoBehaviour
+public class LivesUI : MonoBehaviour
 {
     public Text livesText;
     void Update()
     {
-        livesText.text = "Vie: " + playerstats.lives.ToString();
+        livesText.text = "Vie Restantes: " + PlayerStats.lives.ToString();
     }
 }

@@ -11,14 +11,14 @@ public class WaveSpawner : MonoBehaviour
     private float timeBwaves = 5.5f;
 
     [SerializeField]
-    private Transform SpawnPoint;
+    private Transform spawnPoint;
 
-    private float coutdown = 5f;
+    private float waveCountdown = 5f;
 
     [SerializeField]
-    private Text WaveTimer;
+    private Text waveTimer;
 
-    private int wavecount = 0;
+    private int waveCount = 0;
     // Update is called once per frame
     void Update()
     {
@@ -26,34 +26,34 @@ public class WaveSpawner : MonoBehaviour
         {
             return;
         }
-        if(coutdown>0)
+        if(waveCountdown>0)
         {
-            coutdown -= Time.deltaTime;
-            coutdown = Mathf.Clamp(coutdown, 0f, Mathf.Infinity);
-            WaveTimer.text = string.Format("{0:00.00}", coutdown);
+            waveCountdown -= Time.deltaTime;
+            waveCountdown = Mathf.Clamp(waveCountdown, 0f, Mathf.Infinity);
+            waveTimer.text = string.Format("{0:00.00}", waveCountdown);
         }
         else
         {
             StartCoroutine (spawnWave());
-            coutdown = timeBwaves;
+            waveCountdown = timeBwaves;
         }
     }
     IEnumerator spawnWave()
     {
         
-        playerstats.rounds++;
+        PlayerStats.rounds++;
 
-        Waves tmp = waveT[wavecount];
-        for (int i = 0; i < tmp.count; i++)
+        Waves tmp = waveT[waveCount];
+        for (int i = 0; i < tmp.waveCount; i++)
         {
-            SpawnEnemie(tmp.enemie);
-            yield return new WaitForSeconds(1f/tmp.rate);
+            SpawnEnemie(tmp.gameEnemy);
+            yield return new WaitForSeconds(1f/tmp.waveRate);
         }
-        wavecount++;
+        waveCount++;
     }
     void SpawnEnemie(GameObject enemy)
     {
-        Instantiate(enemy,SpawnPoint.position,SpawnPoint.rotation);
+        Instantiate(enemy,spawnPoint.position,spawnPoint.rotation);
         enemiesAlive++;
     }
 }

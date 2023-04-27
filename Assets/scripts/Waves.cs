@@ -2,8 +2,8 @@
 [System.Serializable]
 public class Waves
 {
-    public GameObject enemie;
-    public int count;
-    public float rate;
+    public GameObject gameEnemy;
+    public int waveCount;
+    public float waveRate;
 
 }

@@ -1,90 +1,94 @@
-{ "pid": 29748, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 29748, "tid": 1, "ts": 1679948400160110, "dur": 7008, "ph": "X", "name": "<Add>b__0", "args": {} },
-{ "pid": 29748, "tid": 1, "ts": 1679948400167122, "dur": 36025, "ph": "X", "name": "<Add>b__0", "args": {} },
-{ "pid": 29748, "tid": 1, "ts": 1679948400203156, "dur": 10939, "ph": "X", "name": "WriteJson", "args": {} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400242634, "dur": 2371, "ph": "X", "name": "", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ph": "M", "name": "thread_name", "args": { "name": "ReadEntireBinlogFromIpcAsync" } },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400158004, "dur": 16432, "ph": "X", "name": "WaitForConnectionAsync", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400174439, "dur": 53411, "ph": "X", "name": "UpdateFromStreamAsync", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400175580, "dur": 3008, "ph": "X", "name": "ReadAsync 0", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400178596, "dur": 626, "ph": "X", "name": "ProcessMessages 4", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400179225, "dur": 9536, "ph": "X", "name": "ReadAsync 4", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400188773, "dur": 312, "ph": "X", "name": "ProcessMessages 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400189089, "dur": 82, "ph": "X", "name": "ReadAsync 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400189175, "dur": 975, "ph": "X", "name": "ProcessMessages 52", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400190153, "dur": 1961, "ph": "X", "name": "ReadAsync 52", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192119, "dur": 41, "ph": "X", "name": "ReadAsync 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192162, "dur": 307, "ph": "X", "name": "ProcessMessages 95", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192472, "dur": 44, "ph": "X", "name": "ReadAsync 95", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192519, "dur": 404, "ph": "X", "name": "ProcessMessages 356", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192926, "dur": 31, "ph": "X", "name": "ReadAsync 356", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400192960, "dur": 278, "ph": "X", "name": "ProcessMessages 16", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400193241, "dur": 939, "ph": "X", "name": "ReadAsync 16", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400194185, "dur": 30, "ph": "X", "name": "ReadAsync 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400194222, "dur": 25379, "ph": "X", "name": "ReadAsync 20", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400219608, "dur": 1, "ph": "X", "name": "ProcessMessages 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400219611, "dur": 41, "ph": "X", "name": "ReadAsync 12", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400219653, "dur": 367, "ph": "X", "name": "ProcessMessages 13", "args": {} },
-{ "pid": 29748, "tid": 12884901888, "ts": 1679948400220024, "dur": 7631, "ph": "X", "name": "ReadAsync 13", "args": {} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400245012, "dur": 54, "ph": "X", "name": "ReadEntireBinlogFromIpcAsync", "args": {} },
-{ "pid": 29748, "tid": 8589934592, "ph": "M", "name": "thread_name", "args": { "name": "WaitForBuildProgramInputDataBeingWrittenAndSendDagReadyMessageAsync" } },
-{ "pid": 29748, "tid": 8589934592, "ts": 1679948400154479, "dur": 59665, "ph": "X", "name": "await writeBuildProgramInputDataTask", "args": {} },
-{ "pid": 29748, "tid": 8589934592, "ts": 1679948400214146, "dur": 2, "ph": "X", "name": "WritePipe.WaitConnectionAsync", "args": {} },
-{ "pid": 29748, "tid": 8589934592, "ts": 1679948400214148, "dur": 2718, "ph": "X", "name": "WriteDagReadyMessage", "args": {} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400245068, "dur": 11, "ph": "X", "name": "WaitForBuildProgramInputDataBeingWrittenAndSendDagReadyMessageAsync", "args": {} },
-{ "pid": 29748, "tid": 4294967296, "ph": "M", "name": "thread_name", "args": { "name": "BuildAsync" } },
-{ "pid": 29748, "tid": 4294967296, "ts": 1679948400124125, "dur": 105747, "ph": "X", "name": "RunBackend", "args": {} },
-{ "pid": 29748, "tid": 4294967296, "ts": 1679948400132538, "dur": 13581, "ph": "X", "name": "BackendProgram.Start", "args": {} },
-{ "pid": 29748, "tid": 4294967296, "ts": 1679948400229901, "dur": 4088, "ph": "X", "name": "await WaitForAndApplyScriptUpdaters", "args": {} },
-{ "pid": 29748, "tid": 4294967296, "ts": 1679948400234093, "dur": 91, "ph": "X", "name": "await taskToReadBuildProgramOutput", "args": {} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400245081, "dur": 8, "ph": "X", "name": "BuildAsync", "args": {} },
+{ "pid": 44396, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 44396, "tid": 1, "ts": 1682270919174724, "dur": 1473, "ph": "X", "name": "<Add>b__0", "args": {} },
+{ "pid": 44396, "tid": 1, "ts": 1682270919176199, "dur": 9882, "ph": "X", "name": "<Add>b__0", "args": {} },
+{ "pid": 44396, "tid": 1, "ts": 1682270919186083, "dur": 6001, "ph": "X", "name": "WriteJson", "args": {} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919226528, "dur": 15, "ph": "X", "name": "", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ph": "M", "name": "thread_name", "args": { "name": "ReadEntireBinlogFromIpcAsync" } },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919174688, "dur": 21670, "ph": "X", "name": "WaitForConnectionAsync", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919196358, "dur": 29254, "ph": "X", "name": "UpdateFromStreamAsync", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919196366, "dur": 478, "ph": "X", "name": "ReadAsync 0", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919196849, "dur": 1, "ph": "X", "name": "ProcessMessages 4", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919196851, "dur": 6168, "ph": "X", "name": "ReadAsync 4", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919203023, "dur": 1, "ph": "X", "name": "ProcessMessages 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919203026, "dur": 45, "ph": "X", "name": "ReadAsync 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919203075, "dur": 5, "ph": "X", "name": "ProcessMessages 51", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919203081, "dur": 11984, "ph": "X", "name": "ReadAsync 51", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215074, "dur": 1, "ph": "X", "name": "ProcessMessages 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215077, "dur": 51, "ph": "X", "name": "ReadAsync 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215131, "dur": 2, "ph": "X", "name": "ProcessMessages 390", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215133, "dur": 25, "ph": "X", "name": "ReadAsync 390", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215163, "dur": 321, "ph": "X", "name": "ReadAsync 61", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215489, "dur": 44, "ph": "X", "name": "ReadAsync 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919215537, "dur": 1547, "ph": "X", "name": "ReadAsync 4", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919217088, "dur": 24, "ph": "X", "name": "ReadAsync 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919217115, "dur": 1, "ph": "X", "name": "ProcessMessages 20", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919217116, "dur": 2279, "ph": "X", "name": "ReadAsync 20", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919219400, "dur": 24, "ph": "X", "name": "ReadAsync 12", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919219426, "dur": 1, "ph": "X", "name": "ProcessMessages 13", "args": {} },
+{ "pid": 44396, "tid": 68719476736, "ts": 1682270919219428, "dur": 6180, "ph": "X", "name": "ReadAsync 13", "args": {} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919226545, "dur": 28, "ph": "X", "name": "ReadEntireBinlogFromIpcAsync", "args": {} },
+{ "pid": 44396, "tid": 64424509440, "ph": "M", "name": "thread_name", "args": { "name": "WaitForBuildProgramInputDataBeingWrittenAndSendDagReadyMessageAsync" } },
+{ "pid": 44396, "tid": 64424509440, "ts": 1682270919174648, "dur": 17454, "ph": "X", "name": "await writeBuildProgramInputDataTask", "args": {} },
+{ "pid": 44396, "tid": 64424509440, "ts": 1682270919192104, "dur": 4245, "ph": "X", "name": "WritePipe.WaitConnectionAsync", "args": {} },
+{ "pid": 44396, "tid": 64424509440, "ts": 1682270919196349, "dur": 35, "ph": "X", "name": "WriteDagReadyMessage", "args": {} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919226574, "dur": 7, "ph": "X", "name": "WaitForBuildProgramInputDataBeingWrittenAndSendDagReadyMessageAsync", "args": {} },
+{ "pid": 44396, "tid": 60129542144, "ph": "M", "name": "thread_name", "args": { "name": "BuildAsync" } },
+{ "pid": 44396, "tid": 60129542144, "ts": 1682270919167774, "dur": 57888, "ph": "X", "name": "RunBackend", "args": {} },
+{ "pid": 44396, "tid": 60129542144, "ts": 1682270919168082, "dur": 6167, "ph": "X", "name": "BackendProgram.Start", "args": {} },
+{ "pid": 44396, "tid": 60129542144, "ts": 1682270919225665, "dur": 12, "ph": "X", "name": "await WaitForAndApplyScriptUpdaters", "args": {} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919226584, "dur": 16, "ph": "X", "name": "BuildAsync", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1679948400169446, "dur":186, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400169679, "dur":20240, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400189940, "dur":111, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400190089, "dur":725, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400190865, "dur":64, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"ScriptAssembliesAndTypeDB" }}
-,{ "pid":12345, "tid":0, "ts":1679948400190855, "dur":167, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400191023, "dur":26895, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400217919, "dur":188, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400218107, "dur":75, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400218370, "dur":3072, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191255, "dur":245, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.2.2f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191502, "dur":132, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.2.2f1\\Editor\\Data\\Tools\\BuildPlayerDataGenerator\\BuildPlayerDataGenerator.exe" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191636, "dur":82, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191719, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191800, "dur":56, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191857, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191912, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192072, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192140, "dur":71, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192212, "dur":80, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192293, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192381, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192438, "dur":50, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192488, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192591, "dur":53, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192732, "dur":57, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll" }}
-,{ "pid":12345, "tid":1, "ts":1679948400191233, "dur":1605, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192839, "dur":102, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1679948400192962, "dur":24985, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1679948400191298, "dur":26604, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1679948400191297, "dur":26629, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1679948400191288, "dur":23703, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1679948400214992, "dur":2874, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1679948400191336, "dur":26583, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1679948400191359, "dur":26539, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1679948400191402, "dur":26517, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1679948400191438, "dur":26477, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1679948400191469, "dur":26531, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1679948400191501, "dur":26483, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1679948400191541, "dur":26355, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1679948400191567, "dur":26332, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1679948400191606, "dur":26431, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1679948400191627, "dur":26290, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1679948400191650, "dur":26286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1679948400191685, "dur":26236, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1679948400224969, "dur":687, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 29748, "tid": 48, "ts": 1679948400246097, "dur": 3088, "ph": "X", "name": "Wait for external events", "args": {"First to finish": "backend1.traceevents"} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400249336, "dur": 2880, "ph": "X", "name": "backend1.traceevents", "args": {} },
-{ "pid": 29748, "tid": 48, "ts": 1679948400241419, "dur": 12454, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1682270919196234, "dur":121, "ph":"X", "name": "IPC_Client_InitializeAndConnectToParent",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919196395, "dur":17896, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919214310, "dur":115, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919214456, "dur":569, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919215116, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json" }}
+,{ "pid":12345, "tid":0, "ts":1682270919215050, "dur":117, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919215168, "dur":3845, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919219013, "dur":229, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919219422, "dur":2628, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215497, "dur":129, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.2.2f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215627, "dur":78, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\2022.2.2f1\\Editor\\Data\\Tools\\BuildPlayerDataGenerator\\BuildPlayerDataGenerator.exe" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215705, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215773, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.AI.Navigation.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215833, "dur":70, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215904, "dur":67, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215972, "dur":66, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216038, "dur":58, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216097, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216161, "dur":96, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216258, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216334, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216399, "dur":64, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216463, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216528, "dur":60, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216589, "dur":65, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216654, "dur":59, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216714, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216777, "dur":61, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216838, "dur":54, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\ScriptAssemblies\\UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216893, "dur":76, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919216970, "dur":72, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.0.2\\Runtime\\Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682270919215482, "dur":1561, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json" }}
+,{ "pid":12345, "tid":1, "ts":1682270919217044, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682270919217117, "dur":1907, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682270919215505, "dur":372, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682270919215877, "dur":3110, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682270919215510, "dur":3519, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682270919215512, "dur":3497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682270919215557, "dur":3448, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682270919215597, "dur":3433, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682270919215632, "dur":3390, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682270919215662, "dur":3344, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1682270919215684, "dur":3324, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1682270919215713, "dur":3303, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1682270919215726, "dur":3300, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1682270919215746, "dur":3271, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1682270919215769, "dur":3263, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1682270919215789, "dur":3222, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1682270919215808, "dur":3211, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1682270919215836, "dur":3178, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682270919224620, "dur":554, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 44396, "tid": 70, "ts": 1682270919226633, "dur": 3073, "ph": "X", "name": "Wait for external events", "args": {"First to finish": "backend1.traceevents"} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919229810, "dur": 2507, "ph": "X", "name": "backend1.traceevents", "args": {} },
+{ "pid": 44396, "tid": 70, "ts": 1682270919226523, "dur": 5840, "ph": "X", "name": "Write chrome-trace events", "args": {} },

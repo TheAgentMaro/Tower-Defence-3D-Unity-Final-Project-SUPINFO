@@ -1,11 +1,11 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class pausemenu : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
    
     public GameObject ui;
-    bool paused = false;
+    bool gamePause = false;
     public string Menu = "Menu";
     public string game = "Game";
     void Update()
@@ -20,17 +20,17 @@ public class pausemenu : MonoBehaviour
     {
         
 
-        if(paused)
+        if(gamePause)
         {
             Time.timeScale = 1f;
             ui.SetActive(false);
-            paused = false;
+            gamePause = false;
         }
         else
         {
             Time.timeScale = 0f;
             ui.SetActive(true);
-            paused = true;
+            gamePause = true;
         }
     }
 

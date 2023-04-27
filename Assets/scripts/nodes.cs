@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
-public class nodes : MonoBehaviour
+public class Nodes : MonoBehaviour
 {
     public Color hoverColorConstrucON;
     public Color hoverColorConstrucOFF;
@@ -10,9 +10,9 @@ public class nodes : MonoBehaviour
     public bool constructed = false;
 
     [HideInInspector]
-    public GameObject turret;
+    public GameObject gameTurret;
     [HideInInspector]
-    public turretblueprint turretbp;
+    public gameTurretBluePrint gameTurretbp;
     [HideInInspector]
     public int upgradeLV;
 
@@ -42,7 +42,7 @@ public class nodes : MonoBehaviour
             return;
         }
               
-       buildturret(buildManager.GetTurretblueprint());
+       buildgameTurret(buildManager.GetgameTurretblueprint());
     }
 
     private void OnMouseEnter()
@@ -70,30 +70,30 @@ public class nodes : MonoBehaviour
     }
 
 
-    private void buildturret (turretblueprint BP)
+    private void buildgameTurret (gameTurretBluePrint BP)
     {
-        if (playerstats.money < BP.cost)
+        if (PlayerStats.money < BP.cost)
         {
             Debug.Log("vous n'avez pas assez d'argent!!");
             return;
         }
-        playerstats.money -= BP.cost;
-        turret = Instantiate(BP.prefab, transform.position + offset, Quaternion.identity);
+        PlayerStats.money -= BP.cost;
+        gameTurret = Instantiate(BP.prefab, transform.position + offset, Quaternion.identity);
         constructed = true;
         upgradeLV = 0;
-        turretbp = BP;
+        gameTurretbp = BP;
     }
     public void upgrade()
     {
 
-        if (playerstats.money < turretbp.upgradecost)
+        if (PlayerStats.money < gameTurretbp.upgradeCost)
         {
             Debug.Log("vous n'avez pas assez d'argent!!");
             return;
         }
-        playerstats.money -= turretbp.upgradecost;
-        Destroy(turret);
-        turret = Instantiate(turretbp.upgradedprefab, transform.position + offset, Quaternion.identity);
+        PlayerStats.money -= gameTurretbp.upgradeCost;
+        Destroy(gameTurret);
+        gameTurret = Instantiate(gameTurretbp.upgradedprefab, transform.position + offset, Quaternion.identity);
         upgradeLV = 1;
     }
 
@@ -101,15 +101,15 @@ public class nodes : MonoBehaviour
     {
         if(upgradeLV!=0)
         {
-            playerstats.money += Mathf.RoundToInt((float)((turretbp.cost+turretbp.upgradecost)*0.4));
+            PlayerStats.money += Mathf.RoundToInt((float)((gameTurretbp.cost+gameTurretbp.upgradeCost)*0.4));
         }
         else
         {
-            playerstats.money += Mathf.RoundToInt((float)((turretbp.cost) * 0.5));
+            PlayerStats.money += Mathf.RoundToInt((float)((gameTurretbp.cost) * 0.5));
         }
-        Destroy(turret);
+        Destroy(gameTurret);
         constructed = false;
-        turretbp = null;
+        gameTurretbp = null;
 
         
     }

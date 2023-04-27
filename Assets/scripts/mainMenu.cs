@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-public class mainMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public string level= "Game" ;
 

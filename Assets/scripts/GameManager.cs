@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         {
             EndGame();
         }
-        if(playerstats.lives<=0)
+        if(PlayerStats.lives<=0)
         {
             EndGame();
         }

@@ -15,35 +15,35 @@ public class BuildManager : MonoBehaviour
         instance = this;
     }
     #endregion
-    public GameObject robot;
-    public GameObject poisson;
-    public GameObject chat;
-    public GameObject chien;
-    public GameObject serpent;
+    public GameObject robotTurret;
+    public GameObject fishTurret;
+    public GameObject catTurret;
+    public GameObject dogTurret;
+    public GameObject snakeTurret;
 
 
-    public turretblueprint turrettobuild;
-    private nodes selectednode;
+    public gameTurretBluePrint gameTurrettobuild;
+    private Nodes selectednode;
 
 
     public NodeUI nodeUI;
 
-    public bool canBuild { get { return turrettobuild != null; } }
-    public bool hasMoney { get { return playerstats.money>=turrettobuild.cost; } }
+    public bool canBuild { get { return gameTurrettobuild != null; } }
+    public bool hasMoney { get { return PlayerStats.money>=gameTurrettobuild.cost; } }
 
-    public void SelectTurretToBuild(turretblueprint turret)
+    public void SelectgameTurretToBuild(gameTurretBluePrint gameTurret)
     {
         deselect();
-        turrettobuild = turret;
+        gameTurrettobuild = gameTurret;
     }
-    public void Selectnode(nodes node)
+    public void Selectnode(Nodes node)
     {
         if (selectednode==node)
         {
             deselect();
         }
         selectednode = node;
-        turrettobuild = null;
+        gameTurrettobuild = null;
         nodeUI.setTarget(node);
     }
 
@@ -53,8 +53,8 @@ public class BuildManager : MonoBehaviour
         selectednode = null;
     }
 
-    public turretblueprint GetTurretblueprint()
+    public gameTurretBluePrint GetgameTurretblueprint()
     {
-        return turrettobuild;
+        return gameTurrettobuild;
     }
 }
