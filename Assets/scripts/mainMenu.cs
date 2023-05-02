@@ -1,9 +1,28 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class MainMenu : MonoBehaviour
 {
     public string level= "Game" ;
+    public GameObject GoMakeUsernameObj;
+    public Text WelcomeText;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        if (GameOptions.HasUsername() == false)
+        {
+            GoMakeUsernameObj.SetActive(true);
+            //welcome text
+            WelcomeText.text = "Bienvenue nouveau joueur !";
+        }
+        else
+        {
+            GoMakeUsernameObj.SetActive(false);
+            WelcomeText.text = "Bienvenue à nouveau " + GameOptions.GetUsername() + "!";
+        }
+    }
     public void Play()
     {
         SceneManager.LoadScene(level);

@@ -156,9 +156,9 @@ public class GameOptions : MonoBehaviour
     //Save all used settings to file :
     public void WriteSettingsToFile()
     {
-/*        // Save player name
+        //Save player name
         SetUsername(UserNameInput.text);
-
+        /*
         // Save resolution
         PlayerPrefs.SetInt("Resolution", resolutionDropdown.value);*/
 
