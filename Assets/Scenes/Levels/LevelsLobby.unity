@@ -262,7 +262,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Moyenne
+  m_Text: Normale
 --- !u!222 &446344545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 482920624}
   - component: {fileID: 482920623}
   m_Layer: 5
-  m_Name: Normale
+  m_Name: Facile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -926,7 +926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Normale '
+  m_Text: Facile
 --- !u!222 &1005305731
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1076,7 +1076,7 @@ GameObject:
   - component: {fileID: 1349599403}
   - component: {fileID: 1349599402}
   m_Layer: 5
-  m_Name: HardCore
+  m_Name: Extreme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1535,7 +1535,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HardCore
+  m_Text: "Extr\xEAme"
 --- !u!222 &1786846687
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1557,7 +1557,7 @@ GameObject:
   - component: {fileID: 1906561979}
   - component: {fileID: 1906561978}
   m_Layer: 5
-  m_Name: Moyenne
+  m_Name: Normale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1788,6 +1788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: Game
+  GoMakeUsernameObj: {fileID: 0}
+  WelcomeText: {fileID: 0}
 --- !u!4 &2032974041
 Transform:
   m_ObjectHideFlags: 0
