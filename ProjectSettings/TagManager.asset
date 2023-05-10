@@ -4,7 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemie
+  - gameEnemie
   layers:
   - Default
   - TransparentFX

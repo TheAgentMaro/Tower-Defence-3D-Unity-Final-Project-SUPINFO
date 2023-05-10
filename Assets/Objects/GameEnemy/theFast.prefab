@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 1206613127366285631}
   m_Layer: 0
   m_Name: theFast
-  m_TagString: enemie
+  m_TagString: gameEnemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,10 +347,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892d443370c2bd74b9c4a40bd8252147, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armor: 20
+  playerArmor: 10
   rm: 0
-  speed: 20
-  starthealth: 50
+  playerSpeed: 10
+  startplayerHealth: 100
   waypointIndex: 0
   size: 0
   enemievalue: 10

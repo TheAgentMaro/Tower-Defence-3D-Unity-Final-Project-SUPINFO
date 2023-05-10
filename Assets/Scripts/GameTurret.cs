@@ -5,7 +5,7 @@ public class GamegameTurret : MonoBehaviour
     public Transform target;
 
     public float range = 15f;
-    public string enemyTag = "enemie";
+    public string enemyTag = "gameEnemie";
     private float turnSpeed = 7f;
     public float attackSpeed = 1f;
     private float fireCountdown = 0;
@@ -25,18 +25,18 @@ public class GamegameTurret : MonoBehaviour
 
     void UpdateTarget()
     {
-        GameObject[] ennemies = GameObject.FindGameObjectsWithTag(enemyTag);
+        GameObject[] gameEnemies = GameObject.FindGameObjectsWithTag(enemyTag);
 
         float selected = Mathf.Infinity;
         GameObject selectedE = null;
 
-        foreach(GameObject enemie in ennemies)
+        foreach(GameObject gameEnemie in gameEnemies)
         {
-            float distanceToEnemie = Vector3.Distance(transform.position, enemie.transform.position);
+            float distanceToEnemie = Vector3.Distance(transform.position, gameEnemie.transform.position);
             if(selected>distanceToEnemie)
             {
                 selected = distanceToEnemie;
-                selectedE = enemie;
+                selectedE = gameEnemie;
             }
         }
         if(selectedE!=null && selected<= range)

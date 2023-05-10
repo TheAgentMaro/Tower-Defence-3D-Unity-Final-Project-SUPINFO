@@ -66,7 +66,7 @@ public class gameTurretBullet : MonoBehaviour
       Collider[] colliders=  Physics.OverlapSphere(transform.position, Radius);
         foreach(Collider collider in colliders)
         {
-            if(collider.tag=="enemie")
+            if(collider.tag== "gameEnemie")
             {
                 damage(collider.transform);
             }

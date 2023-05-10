@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static bool end;
     public GameObject gameoverUI;
-    void start()
+    void Start()
     {
         end = false;
     }
