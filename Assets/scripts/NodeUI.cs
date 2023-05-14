@@ -11,7 +11,7 @@ public class NodeUI : MonoBehaviour
     public Text sellAmount;
     public Button sellButton;
 
-    public void hide()
+    public void Hide()
     {
         UI.SetActive(false);
 
@@ -39,13 +39,13 @@ public class NodeUI : MonoBehaviour
     }
 
 
-    public void upgrade()
+    public void Upgrade()
     {
-        target.upgrade();
+        target.Upgrade();
         BuildManager.instance.deselect();
     }
 
-    public void sell()
+    public void Sell()
     {
         target.Sell();
         BuildManager.instance.deselect();

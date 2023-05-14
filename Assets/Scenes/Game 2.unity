@@ -19247,87 +19247,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveT:
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
-  - gameEnemy: {fileID: 0}
-    waveCount: 0
-    waveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
+  - gameEnemie: {fileID: 0}
+    WaveCount: 0
+    WaveRate: 0
   timeBwaves: 2
-  spawnPoint: {fileID: 0}
-  waveTimer: {fileID: 0}
+  SpawnPoint: {fileID: 0}
+  WaveTimer: {fileID: 0}
 --- !u!4 &1986809824
 Transform:
   m_ObjectHideFlags: 0

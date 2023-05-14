@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GamegameTurret : MonoBehaviour
+public class GameTurret : MonoBehaviour
 {
     public Transform target;
 
@@ -63,7 +63,7 @@ public class GamegameTurret : MonoBehaviour
 
         if(fireCountdown<=0)
         {
-            shoot();
+            Shoot();
             fireCountdown = 1 / attackSpeed;
         }
         fireCountdown -= Time.deltaTime;
@@ -74,7 +74,7 @@ public class GamegameTurret : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
     }
-    void shoot()
+    void Shoot()
     {
        GameObject balleGO= Instantiate(bulletPrefab, canon.position, canon.rotation);
         gameTurretBullet Bullet = balleGO.GetComponent<gameTurretBullet>();

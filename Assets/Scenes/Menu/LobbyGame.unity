@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 482920624}
   - component: {fileID: 482920623}
   m_Layer: 5
-  m_Name: jouer
+  m_Name: LocalModeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -520,7 +520,7 @@ GameObject:
   - component: {fileID: 659437779}
   - component: {fileID: 659437778}
   m_Layer: 5
-  m_Name: quitter
+  m_Name: Quitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -734,7 +734,7 @@ GameObject:
   - component: {fileID: 986809351}
   - component: {fileID: 986809350}
   m_Layer: 5
-  m_Name: MultiplayerGC
+  m_Name: GCTDButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1342,7 +1342,7 @@ GameObject:
   - component: {fileID: 1906561979}
   - component: {fileID: 1906561978}
   m_Layer: 5
-  m_Name: MultiplayerG
+  m_Name: GTDButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1554,7 +1554,7 @@ GameObject:
   - component: {fileID: 2032974041}
   - component: {fileID: 2032974040}
   m_Layer: 0
-  m_Name: main menu
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

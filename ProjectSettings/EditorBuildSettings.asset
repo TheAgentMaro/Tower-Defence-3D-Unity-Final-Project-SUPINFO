@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/LevelsLobby.unity
     guid: 00af765af748d9540bab737f8a23d8d4
   - enabled: 1
+    path: Assets/Scenes/Menu/LobbyGameGreen.unity
+    guid: 95c1c259b6f9c3242a283f462d082023
+  - enabled: 1
+    path: Assets/Scenes/Menu/LobbyGameGreenCircle.unity
+    guid: 7c3aab03442a36748a7994b77bc4b2fc
+  - enabled: 1
     path: Assets/Scenes/Menu/Parametre.unity
     guid: 4eff1d6bee7101747b208166515168df
   - enabled: 1
@@ -30,9 +36,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Levels/Level3.unity
     guid: df47f812a8a39c144a740425c9ee9f95
   - enabled: 1
+    path: Assets/Scenes/Levels/Level4.unity
+    guid: edfd5ef2d7c2031419400176f9e87851
+  - enabled: 0
     path: Assets/Scenes/Levels/GGame.unity
     guid: 54eb02b44739e9c4b9765a4b7cd6667e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/GCGame.unity
-    guid: 71f18e67adc6cfd48a035ebb6b1e9f11
+    guid: 4a91e980e85df8849885b8722b3e11b1
   m_configObjects: {}

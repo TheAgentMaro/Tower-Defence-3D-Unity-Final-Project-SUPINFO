@@ -41,8 +41,8 @@ public class Nodes : MonoBehaviour
         {
             return;
         }
-              
-       buildgameTurret(buildManager.GetgameTurretblueprint());
+
+        BuildgameTurret(buildManager.GetgameTurretblueprint());
     }
 
     private void OnMouseEnter()
@@ -70,7 +70,7 @@ public class Nodes : MonoBehaviour
     }
 
 
-    private void buildgameTurret (gameTurretBluePrint BP)
+    private void BuildgameTurret (gameTurretBluePrint BP)
     {
         if (PlayerStats.money < BP.cost)
         {
@@ -83,7 +83,7 @@ public class Nodes : MonoBehaviour
         upgradeLV = 0;
         gameTurretbp = BP;
     }
-    public void upgrade()
+    public void Upgrade()
     {
 
         if (PlayerStats.money < gameTurretbp.upgradeCost)

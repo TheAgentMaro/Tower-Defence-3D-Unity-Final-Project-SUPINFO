@@ -25,7 +25,25 @@ public class MainMenu : MonoBehaviour
     }
     public void Play()
     {
-        SceneManager.LoadScene(level);
+        GameLobbyManager gameLobbyManager = FindObjectOfType<GameLobbyManager>();
+
+        if (gameLobbyManager != null)
+        {
+            if (level == "GTDButton")
+            {
+                gameLobbyManager.selectedGameMode = "GTD";
+            }
+            else if (level == "GCTDButton")
+            {
+                gameLobbyManager.selectedGameMode = "GTCD";
+            }
+            else
+            {
+                Debug.LogWarning("Mode de jeu inconnu !");
+            }
+        }
+
+        SceneManager.LoadScene("LobbyGame");
     }
 
     public void CreditsButton()
@@ -54,11 +72,11 @@ public class MainMenu : MonoBehaviour
     }
     public void GTDButton()
     {
-        SceneManager.LoadScene("GGame");
+        SceneManager.LoadScene("LobbyGameGreen");
     }
     public void GCTDButton()
     {
-        SceneManager.LoadScene("GCGame");
+        SceneManager.LoadScene("LobbyGameGreenCircle");
     }
     public void Level2()
     {

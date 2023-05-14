@@ -18,7 +18,7 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField]
     private Text WaveTimer;
 
-    private int WaveCount = 0;
+    public int WaveCount = 0;
     // Update is called once per frame
     void Update()
     {
@@ -33,11 +33,11 @@ public class WaveSpawner : MonoBehaviour
 
         if (WaveCountdown <= 0)
         {
-            StartCoroutine(spawnWave());
+            StartCoroutine(SpawnWave());
             WaveCountdown = timeBwaves;
         }
     }
-    IEnumerator spawnWave()
+    IEnumerator SpawnWave()
     {
         
         PlayerStats.rounds++;

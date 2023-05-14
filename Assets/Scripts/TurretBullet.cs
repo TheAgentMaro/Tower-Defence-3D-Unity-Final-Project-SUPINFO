@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class gameTurretBullet : MonoBehaviour
 {
@@ -40,16 +38,16 @@ public class gameTurretBullet : MonoBehaviour
         Destroy(effectins, 2f);
         if(Radius!=0)
         {
-            explode();
+            Explode();
         }
         else
         {
-            damage(enemyTarget);
+            Damage(enemyTarget);
             
         }
         Destroy(gameObject);
     }
-    void damage(Transform enemy)
+    void Damage(Transform enemy)
     {
         GameEnemy e = enemy.GetComponent<GameEnemy>();
         if(e!= null)
@@ -61,14 +59,14 @@ public class gameTurretBullet : MonoBehaviour
             Debug.LogError("ERREUR, pas de script enemie!");
         }
     }
-    void explode()
+    void Explode()
     {
       Collider[] colliders=  Physics.OverlapSphere(transform.position, Radius);
         foreach(Collider collider in colliders)
         {
             if(collider.tag== "gameEnemie")
             {
-                damage(collider.transform);
+                Damage(collider.transform);
             }
         }
     }

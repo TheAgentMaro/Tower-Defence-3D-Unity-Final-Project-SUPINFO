@@ -9,11 +9,11 @@ public class GameOver : MonoBehaviour
     {
         roundsText.text = PlayerStats.rounds.ToString()+ " Rounds Survécu";
     }
-    public void retry()
+    public void Retry()
     {
         SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex,LoadSceneMode.Single);
     }
-    public void menu()
+    public void MainMenu()
     {
         SceneManager.LoadSceneAsync(Menu,LoadSceneMode.Single);
     }

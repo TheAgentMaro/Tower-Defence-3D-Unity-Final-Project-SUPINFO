@@ -49,7 +49,7 @@ public class BuildManager : MonoBehaviour
 
     public void deselect()
     {
-        nodeUI.hide();
+        nodeUI.Hide();
         selectednode = null;
     }
 
