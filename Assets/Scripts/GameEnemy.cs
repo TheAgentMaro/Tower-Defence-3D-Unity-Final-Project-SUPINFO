@@ -54,10 +54,10 @@ public class GameEnemy : MonoBehaviour
         if(playerHealth<=0 && !playerDead)
         {
             playerDead = true;
-            dead();
+            Dead();
         }
     }
-    private void dead()
+    private void Dead()
     {
         PlayerStats.money += enemievalue;
         Destroy(gameObject);

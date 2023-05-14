@@ -12,11 +12,11 @@ public class PauseMenu : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape)|| Input.GetKeyDown(KeyCode.P))
         {
-            toggle();
+            Toggle();
         }
     }
 
-    public  void toggle()
+    public  void Toggle()
     {
         
 
@@ -34,13 +34,13 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void retry()
+    public void Retry()
     {
         Time.timeScale = 1f;
         ui.SetActive(false);
         SceneManager.LoadScene(game);
     }
-    public void menu()
+    public void MainMenu()
     {
         Time.timeScale = 1f;
         ui.SetActive(false);
