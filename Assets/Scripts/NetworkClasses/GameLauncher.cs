@@ -29,7 +29,7 @@ namespace Assets.Scripts.NetworkClasses
         string gameVersion = "1";
 
 
-        [Tooltip("The UI Label to inform the user that the connection is in progress")]
+        [Tooltip("Informer l'utilisateur que la connexion est en cours.")]
         [SerializeField]
         public GameObject progressLabel;
 
@@ -51,17 +51,13 @@ namespace Assets.Scripts.NetworkClasses
 
         void Awake()
         {
-            // #Critical
-            // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
             PhotonNetwork.AutomaticallySyncScene = true;
         }
 
 
         void Start()
         {
-            //Connect();
             progressLabel.SetActive(false);
-            //controlPanel.SetActive(true);
         }
 
         private void Update()
@@ -150,7 +146,7 @@ namespace Assets.Scripts.NetworkClasses
             RandomRoomNumber = randomRoomNumber;
             RoomOptions roomOps = new RoomOptions() { IsVisible = true, IsOpen = true, MaxPlayers = (byte)maxPlayersPerRoom };
 
-            PhotonNetwork.CreateRoom("Salle" + randomRoomNumber, roomOps); 
+            PhotonNetwork.CreateRoom("Salle : " + randomRoomNumber, roomOps); 
             Debug.Log("Numéro de salle aléatoire: " + randomRoomNumber);
         }
 
@@ -181,19 +177,21 @@ namespace Assets.Scripts.NetworkClasses
             isInRoom = true;
 
             string roomName = PhotonNetwork.CurrentRoom.Name;
-            Debug.Log("Salle: " + roomName);
+            Debug.Log("Salle :" + roomName);
 
-            string roomNumberString = roomName.Replace("Room", "");
-            Debug.Log("Salle Numéro String: " + roomNumberString);
+            string roomNumberString = roomName.Replace("Salle :","");
+            Debug.Log("Salle Numéro String :" + roomNumberString);
 
-            try
+            bool conversionSuccessful = int.TryParse(roomNumberString, out int roomNumber);
+
+            if (conversionSuccessful)
             {
-                CurrentRoomNumber = Convert.ToInt32(roomNumberString);
-                Debug.Log("Salle Numéro: " + CurrentRoomNumber);
+                CurrentRoomNumber = roomNumber; 
+                Debug.Log("Salle Numéro :" + CurrentRoomNumber);
             }
-            catch (FormatException e)
+            else
             {
-                Debug.LogError("Erreur de conversion du numéro de salle : " + e.Message);
+                Debug.LogError("Erreur de conversion du numéro de salle :" + roomNumberString);
             }
 
             OnHasJoinedRoom();

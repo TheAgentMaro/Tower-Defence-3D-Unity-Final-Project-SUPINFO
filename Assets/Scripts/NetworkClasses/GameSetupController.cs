@@ -64,7 +64,6 @@ namespace Assets.Scripts.NetworkClasses
 
         public void DestroyOverNetwork(GameObject obj)
         {
-            //Debug.Log("Destroyed Object over network");
 
             if (isMasterClient == false)
                 PhotonNetwork.Destroy(obj);
@@ -78,7 +77,6 @@ namespace Assets.Scripts.NetworkClasses
         {
             Debug.Log("Leaving room");
             PhotonNetwork.LeaveRoom();
-            //PhotonNetwork.SendAllOutgoingCommands();
         }
 
         public void DisconnectFromGame()
@@ -86,40 +84,14 @@ namespace Assets.Scripts.NetworkClasses
             PhotonNetwork.Disconnect();
         }
 
-        //public void OnPlayerEnteredRoom(Player newPlayer)
-        //{
-        //    //throw new System.NotImplementedException();
-        //}
-
         public override void OnPlayerLeftRoom(Player otherPlayer)
         {
-            //throw new System.NotImplementedException();
             Debug.Log("Player Left room. Leaving Game");
 
             LeavingGameText.gameObject.SetActive(true);
 
             Invoke("QuitGame", 5);
         }
-
-        //public void OnRoomPropertiesUpdate(ExitGames.Client.Photon.Hashtable propertiesThatChanged)
-        //{
-        //    //throw new System.NotImplementedException();
-        //}
-
-        //public void OnPlayerPropertiesUpdate(Player targetPlayer, ExitGames.Client.Photon.Hashtable changedProps)
-        //{
-        //    //throw new System.NotImplementedException();
-        //}
-
-        //public void OnMasterClientSwitched(Player newMasterClient)
-        //{
-        //    //throw new System.NotImplementedException();
-        //}
-
-        //public void OnPhotonPlayerDisconnected(Player player)
-        //{
-
-        //}
 
 
         private void QuitGame()

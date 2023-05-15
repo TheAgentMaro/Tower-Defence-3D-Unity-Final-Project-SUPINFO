@@ -29,7 +29,7 @@ public class GameLobbyManager : MonoBehaviour
     {
         PlayMultiplayerButtonObj.SetActive(false);
         CancelCreateRoomButtonObj.SetActive(false);
-        //grab the launcher script off the launcher object
+        
         gameLauncher = LauncherObj.GetComponent<GameLauncher>();
         roomController = RoomControllerObj.GetComponent<NetworkingGameManager>();
     }
@@ -106,9 +106,9 @@ public class GameLobbyManager : MonoBehaviour
         CancelCreateRoomButtonObj.SetActive(false);
         OpenToMultiplayerObj.SetActive(false);
 
-        RoomNumberText.text = "Numéro de salle: " + gameLauncher.CurrentRoomNumber;
+        RoomNumberText.text = "Numéro de salle " + gameLauncher.CurrentRoomNumber;
 
-        gameLauncher.progressLabel.GetComponentInChildren<Text>().text = "Connecté!\nEn attente d'un nombre suffisant de joueurs";
+        gameLauncher.progressLabel.GetComponentInChildren<Text>().text = "Connecte!\nEn attente d'un nombre suffisant de joueurs";
 
         if (gameLauncher.isMasterClient == false)
         {

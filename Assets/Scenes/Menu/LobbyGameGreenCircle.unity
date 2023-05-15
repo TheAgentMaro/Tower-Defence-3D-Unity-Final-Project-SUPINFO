@@ -486,7 +486,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531, y: -276}
+  m_AnchoredPosition: {x: -531, y: -145.16}
   m_SizeDelta: {x: 742.5776, y: 90.8371}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &429687466
@@ -522,7 +522,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vide
+  m_Text: 'Organisateur :'
 --- !u!222 &429687467
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1228,8 +1228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 598, y: -68}
-  m_SizeDelta: {x: 742.5776, y: 90.8371}
+  m_AnchoredPosition: {x: 478.83997, y: -132}
+  m_SizeDelta: {x: 962.32, y: 298.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1046352195
 MonoBehaviour:
@@ -1252,11 +1252,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 8f36283811dd07a4280faf6d0a84640a, type: 3}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 495c9e2a934bcc640a8d7427b13cb680, type: 3}
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 3
     m_MaxSize: 70
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1516,7 +1516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531, y: -163}
+  m_AnchoredPosition: {x: -531, y: -236}
   m_SizeDelta: {x: 742.5776, y: 90.8371}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1349858478
@@ -2136,7 +2136,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Num\xE9ro de looby :"
+  m_Text: "Num\xE9ro de salle :"
 --- !u!222 &2126593402
 CanvasRenderer:
   m_ObjectHideFlags: 0
