@@ -1378,7 +1378,7 @@ GameObject:
   - component: {fileID: 118783580}
   - component: {fileID: 118783579}
   m_Layer: 5
-  m_Name: reset
+  m_Name: Reset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5308,8 +5308,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2033910448}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: sell
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6633,7 +6633,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Resume
+  m_Text: 'Continuer
+
+'
 --- !u!222 &583969561
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15485,7 +15487,7 @@ GameObject:
   - component: {fileID: 1620663663}
   - component: {fileID: 1620663662}
   m_Layer: 5
-  m_Name: quit
+  m_Name: Quitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17917,8 +17919,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2033910448}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: upgrade
+        m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
+        m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19027,7 +19029,7 @@ GameObject:
   - component: {fileID: 1940855115}
   - component: {fileID: 1940855114}
   m_Layer: 5
-  m_Name: menu
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19099,8 +19101,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 708248513}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: menu
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20387,7 +20389,7 @@ GameObject:
   - component: {fileID: 2063320223}
   - component: {fileID: 2063320222}
   m_Layer: 5
-  m_Name: retry
+  m_Name: Retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20459,8 +20461,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 708248513}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: retry
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

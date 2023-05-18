@@ -33,21 +33,21 @@ public class BuildManager : MonoBehaviour
 
     public void SelectgameTurretToBuild(gameTurretBluePrint gameTurret)
     {
-        deselect();
+        Deselect();
         gameTurrettobuild = gameTurret;
     }
     public void Selectnode(Nodes node)
     {
         if (selectednode==node)
         {
-            deselect();
+            Deselect();
         }
         selectednode = node;
         gameTurrettobuild = null;
         nodeUI.setTarget(node);
     }
 
-    public void deselect()
+    public void Deselect()
     {
         nodeUI.Hide();
         selectednode = null;

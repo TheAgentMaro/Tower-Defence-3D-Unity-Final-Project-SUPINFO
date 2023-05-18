@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\BuildManager.cs" />
     <Compile Include="Assets\Scripts\SceneLoaderDropdowns.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\Scripts\WaveSpawnerGTD.cs" />
     <Compile Include="Assets\Scripts\PrefabInfo.cs" />
     <Compile Include="Assets\Scripts\NodeUI.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\AppSettingsExtensions.cs" />
@@ -77,14 +78,15 @@
     <Compile Include="Assets\Scripts\TurretBullet.cs" />
     <Compile Include="Assets\Scripts\GameShop.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
-    <Compile Include="Assets\Objects\Art\Enemy Stone Monster\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\Scripts\GameLobbyManager.cs" />
+    <Compile Include="Assets\Objects\Art\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
     <Compile Include="Assets\Scripts\WaveSpawner.cs" />
     <Compile Include="Assets\Scripts\LivesUI.cs" />
     <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\NetworkClasses\GameSetupController.cs" />
-    <Compile Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_Demo.cs" />
+    <Compile Include="Assets\Scripts\WaveSpawnerGCTD.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\Objects\Art\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Scripts\TurretBleuPrint.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatGui.cs" />
@@ -99,10 +101,10 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
     <Compile Include="Assets\Scripts\NetworkClasses\NetworkingGameManager.cs" />
+    <Compile Include="Assets\Objects\Art\Art\Enemy Stone Monster\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChatAppIdCheckerUI.cs" />
-    <Compile Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Demo\Scripts\GE_FantasySkyboxFREE_UIs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -114,12 +116,11 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Objects\Art\Projectiles\Rockets Missiles and Bombs\READ ME.txt" />
-    <None Include="Assets\Objects\Art\Buildings\low poly medieval buildings\readme.txt" />
+    <None Include="Assets\Objects\Art\Art\Projectiles\Rockets Missiles and Bombs\READ ME.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Fog and Ambient references.txt" />
+    <None Include="Assets\Objects\Art\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Fog and Ambient references.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
@@ -132,7 +133,7 @@
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-    <None Include="Assets\Objects\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Readme.txt" />
+    <None Include="Assets\Objects\Art\Art\Skyboxes\_TerrainAutoUpgrade\Fantasy Skybox FREE\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

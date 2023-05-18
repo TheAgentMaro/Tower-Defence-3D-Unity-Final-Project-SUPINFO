@@ -42,12 +42,12 @@ public class NodeUI : MonoBehaviour
     public void Upgrade()
     {
         target.Upgrade();
-        BuildManager.instance.deselect();
+        BuildManager.instance.Deselect();
     }
 
     public void Sell()
     {
         target.Sell();
-        BuildManager.instance.deselect();
+        BuildManager.instance.Deselect();
     }
 }

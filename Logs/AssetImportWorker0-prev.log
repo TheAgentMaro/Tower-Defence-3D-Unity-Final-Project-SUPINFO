@@ -15,7 +15,7 @@ C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57385
+52946
 Successfully changed project path to: C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO
 C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18656] Host "[IP] 192.168.18.1 [Port] 0 [Flags] 2 [Guid] 3207476499 [EditorId] 3207476499 [Version] 1048832 [Id] WindowsEditor(7,Marwen) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [242796] Host "[IP] 192.168.18.1 [Port] 0 [Flags] 2 [Guid] 3291029991 [EditorId] 3291029991 [Version] 1048832 [Id] WindowsEditor(7,Marwen) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18656] Host "[IP] 192.168.18.1 [Port] 0 [Flags] 2 [Guid] 3207476499 [EditorId] 3207476499 [Version] 1048832 [Id] WindowsEditor(7,Marwen) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [242796] Host "[IP] 192.168.18.1 [Port] 0 [Flags] 2 [Guid] 3291029991 [EditorId] 3291029991 [Version] 1048832 [Id] WindowsEditor(7,Marwen) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 16.00 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 16.08 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.2f1 (c93c5d3acf5b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -67,45 +67,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56084
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013584 seconds.
-- Loaded All Assemblies, in  0.523 seconds
+Registered in 0.015906 seconds.
+- Loaded All Assemblies, in  0.446 seconds
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.312 seconds
+- Finished resetting the current domain, in  0.294 seconds
 Domain Reload Profiling:
-	ReloadAssembly (304ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (244ms)
+		BeginReloadAssembly (95ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (131ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (205ms)
-				TypeCache.Initialize (204ms)
-					TypeCache.ScanAssembly (202ms)
+			SetupTypeCache (188ms)
+				TypeCache.Initialize (187ms)
+					TypeCache.ScanAssembly (185ms)
 				ResolveRequiredComponents (1ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (248ms)
+			SetupLoadedEditorAssemblies (235ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (16ms)
 				SetLoadedEditorAssemblies (5ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -113,50 +113,50 @@ Domain Reload Profiling:
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.674 seconds
-Refreshing native plugins compatible for Editor in 6.41 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.606 seconds
+Refreshing native plugins compatible for Editor in 5.54 ms, found 2 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.587 seconds
+- Finished resetting the current domain, in  0.574 seconds
 Domain Reload Profiling:
-	ReloadAssembly (255ms)
-		BeginReloadAssembly (149ms)
+	ReloadAssembly (265ms)
+		BeginReloadAssembly (150ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		LoadAllAssembliesAndSetupDomain (412ms)
-			LoadAssemblies (124ms)
+			CreateAndSetChildDomain (25ms)
+		LoadAllAssembliesAndSetupDomain (337ms)
+			LoadAssemblies (102ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (352ms)
-				TypeCache.Initialize (270ms)
-					TypeCache.ScanAssembly (267ms)
+			SetupTypeCache (296ms)
+				TypeCache.Initialize (216ms)
+					TypeCache.ScanAssembly (210ms)
 				ResolveRequiredComponents (5ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (410ms)
+			SetupLoadedEditorAssemblies (415ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (5ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (275ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (291ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (10ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 8.42 ms, found 2 plugins.
+			AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 6.57 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 26 unused Assets / (59.8 KB). Loaded Objects now: 2450.
 Memory consumption went from 327.8 MB to 327.7 MB.
-Total: 6.355500 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.245200 ms MarkObjects: 5.416400 ms  DeleteObjects: 0.207400 ms)
+Total: 3.062000 ms (FindLiveObjects: 0.211900 ms CreateObjectMapping: 0.058800 ms MarkObjects: 2.671400 ms  DeleteObjects: 0.118600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -172,17 +172,86 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 377638.910583 seconds.
-  path: Assets/Scenes/Menu/LobbyGameGreenCircle.unity
-  artifactKey: Guid(7c3aab03442a36748a7994b77bc4b2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 642266.203797 seconds.
+  path: Assets/Objects/node.prefab
+  artifactKey: Guid(ccda9a4932ee7364ba2af498b33056b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/Menu/LobbyGameGreenCircle.unity using Guid(7c3aab03442a36748a7994b77bc4b2fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d1dc25f13352d14e2f4e0fbf2db86e') in 0.014638 seconds 
-Number of asset objects unloaded after import = 0
+Start importing Assets/Objects/node.prefab using Guid(ccda9a4932ee7364ba2af498b33056b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b905a0ff8878812c91ea3ef1f120aaa') in 0.174344 seconds 
+Number of asset objects unloaded after import = 8
 ========================================================================
 Received Import Request.
-  Time since last request: 7.508181 seconds.
-  path: Assets/Scenes/Menu/LobbyGameGreen.unity
-  artifactKey: Guid(95c1c259b6f9c3242a283f462d082023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.274606 seconds.
+  path: Assets/Audio/TurretMusic/Hand Gun 3.wav
+  artifactKey: Guid(72fa4bbebd4212947b59f48b6501c05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/Menu/LobbyGameGreen.unity using Guid(95c1c259b6f9c3242a283f462d082023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '011b88e61b3b1f7a0ade9b2c2778d39e') in 0.003322 seconds 
-Number of asset objects unloaded after import = 0
+Start importing Assets/Audio/TurretMusic/Hand Gun 3.wav using Guid(72fa4bbebd4212947b59f48b6501c05c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39b7fdae4adf517f37876a1d060eb317') in 0.048758 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.439522 seconds.
+  path: Assets/Audio/TurretMusic/Laser Impact Light_6.wav
+  artifactKey: Guid(cf58ffff9ee1de14db03e116cb9cca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/TurretMusic/Laser Impact Light_6.wav using Guid(cf58ffff9ee1de14db03e116cb9cca6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c6e39d9ce594e87e6c018430c76c45') in 0.018451 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Audio/TurretMusic/Indiana Jones Punch.wav
+  artifactKey: Guid(d51fe190534fb4640917599e9ca7041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/TurretMusic/Indiana Jones Punch.wav using Guid(d51fe190534fb4640917599e9ca7041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4df4ac6d09eb0252da7f74482cf1111') in 0.023690 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Audio/TurretMusic/tir lance missile.mp3
+  artifactKey: Guid(bd014f730cd3f2d4ab67ca8b3bfecf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/TurretMusic/tir lance missile.mp3 using Guid(bd014f730cd3f2d4ab67ca8b3bfecf08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30244a8b74022849b876c8c313c4a851') in 0.027930 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Audio/TurretMusic/flamme.mp3
+  artifactKey: Guid(e57c45e71893cd749b4b29a7bb5e5d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Audio/TurretMusic/flamme.mp3 using Guid(e57c45e71893cd749b4b29a7bb5e5d8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ae0baf17229b67ea6d13531e460cc96') in 0.018754 seconds 
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.346009 seconds.
+  path: Assets/Objects/GameTurret/CatTurret 2.prefab
+  artifactKey: Guid(b8d60113f3e542241b955ca47d0bd098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Objects/GameTurret/CatTurret 2.prefab using Guid(b8d60113f3e542241b955ca47d0bd098) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bdf652db37f6fb60b3d9f510ee50c0') in 0.073789 seconds 
+Number of asset objects unloaded after import = 96
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Objects/GameTurret/FishTurret 2.prefab
+  artifactKey: Guid(e9b8f4177aaa24d4094071505519cd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Objects/GameTurret/FishTurret 2.prefab using Guid(e9b8f4177aaa24d4094071505519cd15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90acd2602ee861e3d197786a31319ab5') in 0.124910 seconds 
+Number of asset objects unloaded after import = 69
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Objects/GameTurret/SnakeTurret 1.prefab
+  artifactKey: Guid(1e711dd37f95e524092859151a927508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Objects/GameTurret/SnakeTurret 1.prefab using Guid(1e711dd37f95e524092859151a927508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c670f1bb0c4f59c10e13460e411dc721') in 0.078459 seconds 
+Number of asset objects unloaded after import = 93
+========================================================================
+Received Import Request.
+  Time since last request: 8.149817 seconds.
+  path: Assets/Objects/Art/Materials/EnemySpawner.mat
+  artifactKey: Guid(2745c9fd54a475240854fb4d8ec44c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Objects/Art/Materials/EnemySpawner.mat using Guid(2745c9fd54a475240854fb4d8ec44c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '760bd0783a41f81984f6f57cfcba3e36') in 0.040206 seconds 
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: L’opération d’entrée/sortie a été abandonnée en raison de l’arrêt d’un thread ou à la demande d’une application.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
