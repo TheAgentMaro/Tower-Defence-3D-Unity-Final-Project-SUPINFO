@@ -2813,9 +2813,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: retry
+      - m_Target: {fileID: 690870214}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7256,6 +7256,7 @@ GameObject:
   - component: {fileID: 690870211}
   - component: {fileID: 690870213}
   - component: {fileID: 690870212}
+  - component: {fileID: 690870214}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -7324,6 +7325,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690870210}
   m_CullTransparentMesh: 0
+--- !u!114 &690870214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690870210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c60cfd22b60ef409dc65511c1e6a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 671196100}
+  moneyUI: {fileID: 1870328398}
+  liveUI: {fileID: 1199868724}
+  waveTimerUI: {fileID: 146198056}
+  shopUI: {fileID: 1325001783}
+  gameOverUI: {fileID: 933114594}
+  pauseUI: {fileID: 690870210}
+  menuScene: Menu
 --- !u!1001 &695353064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9194,8 +9215,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 690870210}
-  Menu: Menu
-  game: Game
+  moneyUI: {fileID: 0}
+  liveUI: {fileID: 0}
+  waveTimerUI: {fileID: 0}
+  shopUI: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  pauseUI: {fileID: 0}
+  menuScene: Menu
 --- !u!114 &931739714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9664,9 +9690,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: menu
+      - m_Target: {fileID: 690870214}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14329,7 +14355,7 @@ GameObject:
   - component: {fileID: 1375093561}
   - component: {fileID: 1375093560}
   m_Layer: 5
-  m_Name: continue
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14400,9 +14426,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: toggle
+      - m_Target: {fileID: 690870214}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

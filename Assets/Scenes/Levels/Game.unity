@@ -1165,7 +1165,7 @@ GameObject:
   - component: {fileID: 101515171}
   - component: {fileID: 101515170}
   m_Layer: 5
-  m_Name: continue
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1236,9 +1236,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: toggle
+      - m_Target: {fileID: 246861395}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1449,9 +1449,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: retry
+      - m_Target: {fileID: 246861395}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2346,6 +2346,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbaebc669eda4be4191c8507b56ec768, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 874118091}
+  - {fileID: 1490476064}
+  - {fileID: 1328396066}
+  - {fileID: 679524530}
+  - {fileID: 2046663928}
+  - {fileID: 276766479}
+  - {fileID: 1637249625}
+  - {fileID: 58560695}
+  - {fileID: 1149611916}
+  - {fileID: 1309179201}
+  - {fileID: 407203214}
+  - {fileID: 981021612}
 --- !u!1001 &199159485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2832,6 +2845,7 @@ GameObject:
   - component: {fileID: 246861392}
   - component: {fileID: 246861394}
   - component: {fileID: 246861393}
+  - component: {fileID: 246861395}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -2900,6 +2914,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246861391}
   m_CullTransparentMesh: 0
+--- !u!114 &246861395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246861391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c60cfd22b60ef409dc65511c1e6a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 1626272229}
+  moneyUI: {fileID: 1345953853}
+  liveUI: {fileID: 248315201}
+  waveTimerUI: {fileID: 99191491}
+  shopUI: {fileID: 391203181}
+  gameOverUI: {fileID: 708248511}
+  pauseUI: {fileID: 246861391}
+  menuScene: Menu
 --- !u!1 &248315201
 GameObject:
   m_ObjectHideFlags: 0
@@ -15558,9 +15592,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: menu
+      - m_Target: {fileID: 246861395}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19423,7 +19457,7 @@ MonoBehaviour:
   waveT:
   - gameEnemie: {fileID: 5241608253113823065, guid: 107a7b025b0b77d40bb78862a45345bb,
       type: 3}
-    WaveCount: 5
+    WaveCount: 3
     WaveRate: 1
   - gameEnemie: {fileID: 5241608253113823065, guid: 107a7b025b0b77d40bb78862a45345bb,
       type: 3}
@@ -19439,11 +19473,11 @@ MonoBehaviour:
     WaveRate: 3
   - gameEnemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f,
       type: 3}
-    WaveCount: 5
+    WaveCount: 10
     WaveRate: 4
   - gameEnemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f,
       type: 3}
-    WaveCount: 10
+    WaveCount: 12
     WaveRate: 4
   - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
       type: 3}
@@ -19451,7 +19485,7 @@ MonoBehaviour:
     WaveRate: 1
   - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
       type: 3}
-    WaveCount: 5
+    WaveCount: 10
     WaveRate: 2
   - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
       type: 3}
@@ -19464,66 +19498,6 @@ MonoBehaviour:
   - gameEnemie: {fileID: 5241608253113823065, guid: 107a7b025b0b77d40bb78862a45345bb,
       type: 3}
     WaveCount: 20
-    WaveRate: 2
-  - gameEnemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: c9ec4822ccf88584fb4d0dcf6a0e0497,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
-      type: 3}
-    WaveCount: 5
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 403ce73746816f64ca603d1245b8e586,
-      type: 3}
-    WaveCount: 10
-    WaveRate: 2
-  - gameEnemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f,
-      type: 3}
-    WaveCount: 10
-    WaveRate: 3
-  - gameEnemie: {fileID: 1311290861401530, guid: 27a8bfe2c3002db4499a71ca2788811f,
-      type: 3}
-    WaveCount: 15
-    WaveRate: 4
-  - gameEnemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
-      type: 3}
-    WaveCount: 10
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
-      type: 3}
-    WaveCount: 15
-    WaveRate: 2
-  - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
-      type: 3}
-    WaveCount: 20
-    WaveRate: 2
-  - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
-      type: 3}
-    WaveCount: 10
-    WaveRate: 3
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 2
     WaveRate: 2
   timeBwaves: 2
   SpawnPoint: {fileID: 748390868026984527}
@@ -19607,8 +19581,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 246861391}
-  Menu: Menu
-  game: Game
+  moneyUI: {fileID: 0}
+  liveUI: {fileID: 0}
+  waveTimerUI: {fileID: 0}
+  shopUI: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  pauseUI: {fileID: 0}
+  menuScene: Menu
 --- !u!1001 &1992545326
 PrefabInstance:
   m_ObjectHideFlags: 0

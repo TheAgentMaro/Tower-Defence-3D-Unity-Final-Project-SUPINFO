@@ -1,32 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using System.Linq;
 
 [System.Serializable]
 public class SpawnPointWaves
 {
     public Transform spawnTransform;
     public Waves[] waves;
+    public Transform[] spawnPoints;
 }
 
 public class WaveSpawnerGTD : MonoBehaviour
 {
     public static int enemiesAlive = 0;
 
-    public SpawnPoint[] spawnPoints;
-
-    [SerializeField]
-    private float timeBwaves = 5.5f;
+    public SpawnPointWaves[] spawnPointWaves;
 
     private float waveCountdown = 5f;
+    private int currentWaveIndex = 0;
+    private int currentEnemyIndex = 0;
 
     [SerializeField]
     private Text waveTimer;
 
-    public int waveCount = 0;
-
+    // Update is called once per frame
     void Update()
     {
         if (enemiesAlive > 0)
@@ -41,7 +38,7 @@ public class WaveSpawnerGTD : MonoBehaviour
         if (waveCountdown <= 0)
         {
             StartCoroutine(SpawnWave());
-            waveCountdown = timeBwaves;
+            waveCountdown = spawnPointWaves[currentWaveIndex].waves[0].WaveRate;
         }
     }
 
@@ -49,80 +46,46 @@ public class WaveSpawnerGTD : MonoBehaviour
     {
         PlayerStats.rounds++;
 
-        // Find the maximum number of waves among all spawn points
-        int maxWaves = 0;
-        foreach (SpawnPoint spawnPoint in spawnPoints)
-        {
-            int numWaves = spawnPoint.waves.Length;
-            maxWaves = Mathf.Max(maxWaves, numWaves);
-        }
+        SpawnPointWaves currentSpawnPointWave = spawnPointWaves[currentWaveIndex];
+        Waves[] waves = currentSpawnPointWave.waves;
 
-        // Create a list of coroutines for each spawn point
-        List<Coroutine> spawnCoroutines = new List<Coroutine>();
-
-        for (int waveIndex = 0; waveIndex < maxWaves; waveIndex++)
+        for (int i = 0; i < waves.Length; i++)
         {
-            foreach (SpawnPoint spawnPoint in spawnPoints)
+            Waves currentWave = waves[i];
+
+            for (int j = 0; j < currentWave.WaveCount; j++)
             {
-                Waves[] waves = spawnPoint.waves;
-
-                // Check if the current spawn point has the wave at the current index
-                if (waveIndex < waves.Length)
-                {
-                    Waves wave = waves[waveIndex];
-                    int totalEnemies = wave.WaveCount;
-                    GameObject gameEnemy = wave.gameEnemie;
-                    Transform spawnTransform = spawnPoint.spawnTransform;
-
-                    // Start a coroutine for each spawn point to spawn enemies simultaneously
-                    Coroutine spawnCoroutine = StartCoroutine(SpawnEnemiesAtSpawnPoint(totalEnemies, gameEnemy, spawnTransform, wave.WaveRate));
-                    spawnCoroutines.Add(spawnCoroutine);
-                }
+                SpawnEnemy(currentWave.gameEnemie, currentSpawnPointWave.spawnPoints);
+                yield return new WaitForSeconds(1f / currentWave.WaveRate);
             }
-
-            // Wait until all spawn coroutines have finished
-            yield return new WaitUntil(() => spawnCoroutines.All(c => c == null));
-
-            // Clear the list of coroutines
-            spawnCoroutines.Clear();
         }
 
-        waveCount++;
+        currentWaveIndex++;
+        currentEnemyIndex = 0;
     }
 
-    IEnumerator SpawnEnemiesAtSpawnPoint(int totalEnemies, GameObject gameEnemy, Transform spawnTransform, float waveRate)
+    void SpawnEnemy(GameObject gameEnemie, Transform[] spawnPoints)
     {
-        for (int j = 0; j < totalEnemies; j++)
+        if (spawnPoints.Length == 0)
         {
-            if (CanSpawnEnemy(spawnTransform))
-            {
-                Instantiate(gameEnemy, spawnTransform.position, spawnTransform.rotation);
-                enemiesAlive++;
-            }
-            else
-            {
-                yield return null; // Wait for the next frame if the spawn point is occupied
-                j--; // Retry spawning the enemy at the same index
-            }
-
-            yield return new WaitForSeconds(1f / waveRate);
+            Debug.LogWarning("No spawn points assigned for enemy spawning.");
+            return;
         }
 
-        // Mark the coroutine as finished
-        yield return null;
-    }
-    bool CanSpawnEnemy(Transform spawnTransform)
-    {
-        Collider[] colliders = Physics.OverlapSphere(spawnTransform.position, 1f); // Check for nearby colliders
-
-        foreach (Collider collider in colliders)
+        if (gameEnemie == null)
         {
-            if (collider.CompareTag("gameEnemie")) // Check if there's already an enemy nearby
-            {
-                return false;
-            }
+            Debug.LogWarning("No enemy prefab assigned for spawning.");
+            return;
         }
 
-        return true;
+        int spawnIndex = currentEnemyIndex % spawnPoints.Length;
+        GameObject spawnedEnemy = Instantiate(gameEnemie, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        GameEnemyGTD enemyComponent = spawnedEnemy.GetComponent<GameEnemyGTD>();
+        if (enemyComponent != null)
+        {
+            enemyComponent.SetWaypoints(spawnPoints);
+        }
+        enemiesAlive++;
+        currentEnemyIndex++;
     }
 }

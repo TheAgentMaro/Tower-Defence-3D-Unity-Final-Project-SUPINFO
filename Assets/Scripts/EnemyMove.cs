@@ -2,17 +2,15 @@
 
 public class EnemyMove : MonoBehaviour
 {
+    public static Transform[] waypoints; 
 
-    public static Transform[] points;
     // Start is called before the first frame update
     void Awake()
     {
-        points = new Transform[transform.childCount];
-        for(int i=0;i<points.Length;i++)
+        waypoints = new Transform[transform.childCount];
+        for (int i = 0; i < waypoints.Length; i++)
         {
-            points[i] = transform.GetChild(i);
+            waypoints[i] = transform.GetChild(i);
         }
     }
-    
-
 }

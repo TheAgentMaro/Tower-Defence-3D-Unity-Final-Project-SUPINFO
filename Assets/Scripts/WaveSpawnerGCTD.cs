@@ -8,6 +8,7 @@ using System.Linq;
 public class SpawnPoint
 {
     public Transform spawnTransform;
+    public Transform[] waypoints;
     public Waves[] waves;
 }
 
@@ -15,10 +16,12 @@ public class WaveSpawnerGCTD : MonoBehaviour
 {
     public static int enemiesAlive = 0;
 
-    public SpawnPoint[] spawnPoints;
+    public Waves[] waveT;
 
     [SerializeField]
     private float timeBwaves = 5.5f;
+
+    public Transform[] spawnPoints;
 
     private float waveCountdown = 5f;
 
@@ -27,6 +30,7 @@ public class WaveSpawnerGCTD : MonoBehaviour
 
     public int waveCount = 0;
 
+    // Update is called once per frame
     void Update()
     {
         if (enemiesAlive > 0)
@@ -49,81 +53,19 @@ public class WaveSpawnerGCTD : MonoBehaviour
     {
         PlayerStats.rounds++;
 
-        // Find the maximum number of waves among all spawn points
-        int maxWaves = 0;
-        foreach (SpawnPoint spawnPoint in spawnPoints)
+        Waves currentWave = waveT[waveCount];
+        for (int i = 0; i < currentWave.WaveCount; i++)
         {
-            int numWaves = spawnPoint.waves.Length;
-            maxWaves = Mathf.Max(maxWaves, numWaves);
+            SpawnEnemy(currentWave.gameEnemie);
+            yield return new WaitForSeconds(1f / currentWave.WaveRate);
         }
-
-        // Create a list of coroutines for each spawn point
-        List<Coroutine> spawnCoroutines = new List<Coroutine>();
-
-        for (int waveIndex = 0; waveIndex < maxWaves; waveIndex++)
-        {
-            foreach (SpawnPoint spawnPoint in spawnPoints)
-            {
-                Waves[] waves = spawnPoint.waves;
-
-                // Check if the current spawn point has the wave at the current index
-                if (waveIndex < waves.Length)
-                {
-                    Waves wave = waves[waveIndex];
-                    int totalEnemies = wave.WaveCount;
-                    GameObject gameEnemy = wave.gameEnemie;
-                    Transform spawnTransform = spawnPoint.spawnTransform;
-
-                    // Start a coroutine for each spawn point to spawn enemies simultaneously
-                    Coroutine spawnCoroutine = StartCoroutine(SpawnEnemiesAtSpawnPoint(totalEnemies, gameEnemy, spawnTransform, wave.WaveRate));
-                    spawnCoroutines.Add(spawnCoroutine);
-                }
-            }
-
-            // Wait until all spawn coroutines have finished
-            yield return new WaitUntil(() => spawnCoroutines.All(c => c == null));
-
-            // Clear the list of coroutines
-            spawnCoroutines.Clear();
-        }
-
         waveCount++;
     }
 
-    IEnumerator SpawnEnemiesAtSpawnPoint(int totalEnemies, GameObject gameEnemy, Transform spawnTransform, float waveRate)
+    void SpawnEnemy(GameObject gameEnemie)
     {
-        for (int j = 0; j < totalEnemies; j++)
-        {
-            if (CanSpawnEnemy(spawnTransform))
-            {
-                Instantiate(gameEnemy, spawnTransform.position, spawnTransform.rotation);
-                enemiesAlive++;
-            }
-            else
-            {
-                yield return null; // Wait for the next frame if the spawn point is occupied
-                j--; // Retry spawning the enemy at the same index
-            }
-
-            yield return new WaitForSeconds(1f / waveRate);
-        }
-
-        // Mark the coroutine as finished
-        yield return null;
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        Instantiate(gameEnemie, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        enemiesAlive++;
     }
-    bool CanSpawnEnemy(Transform spawnTransform)
-    {
-        Collider[] colliders = Physics.OverlapSphere(spawnTransform.position, 1f); // Check for nearby colliders
-
-        foreach (Collider collider in colliders)
-        {
-            if (collider.CompareTag("gameEnemie")) // Check if there's already an enemy nearby
-            {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
 }

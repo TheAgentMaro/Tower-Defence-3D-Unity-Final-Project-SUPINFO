@@ -4656,7 +4656,7 @@ GameObject:
   - component: {fileID: 517029375}
   - component: {fileID: 517029374}
   m_Layer: 5
-  m_Name: continue
+  m_Name: Continue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4727,9 +4727,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: toggle
+      - m_Target: {fileID: 973300872}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: ContinueGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9043,6 +9043,7 @@ GameObject:
   - component: {fileID: 973300869}
   - component: {fileID: 973300871}
   - component: {fileID: 973300870}
+  - component: {fileID: 973300872}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -9111,6 +9112,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 973300868}
   m_CullTransparentMesh: 0
+--- !u!114 &973300872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973300868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83c60cfd22b60ef409dc65511c1e6a0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ui: {fileID: 2069154114}
+  moneyUI: {fileID: 710143883}
+  liveUI: {fileID: 310060826}
+  waveTimerUI: {fileID: 1268905779}
+  shopUI: {fileID: 2136003947}
+  gameOverUI: {fileID: 755181770}
+  pauseUI: {fileID: 973300868}
+  menuScene: Menu
 --- !u!4 &981021612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9201573984036434506, guid: aec33830843d4804ba2b63de1d80b2b2,
@@ -10349,9 +10370,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: retry
+      - m_Target: {fileID: 973300872}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15714,8 +15735,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 973300868}
-  Menu: Menu
-  game: Game
+  moneyUI: {fileID: 0}
+  liveUI: {fileID: 0}
+  waveTimerUI: {fileID: 0}
+  shopUI: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  pauseUI: {fileID: 0}
+  menuScene: Menu
 --- !u!114 &1590094489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15862,26 +15888,6 @@ MonoBehaviour:
   - gameEnemie: {fileID: 5241608253113823065, guid: 9bba9facadeb1b741b3f99df3629ec79,
       type: 3}
     WaveCount: 15
-    WaveRate: 2
-  - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
-      type: 3}
-    WaveCount: 20
-    WaveRate: 2
-  - gameEnemie: {fileID: 5241608253113823065, guid: e88ec61c8178f4b41852bccab0a9d5ea,
-      type: 3}
-    WaveCount: 10
-    WaveRate: 3
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 1
-    WaveRate: 1
-  - gameEnemie: {fileID: 5241608253113823065, guid: 761d653e593974f4bb30b8705f39842f,
-      type: 3}
-    WaveCount: 2
     WaveRate: 2
   timeBwaves: 2
   SpawnPoint: {fileID: 993518987}
@@ -18330,9 +18336,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: menu
+      - m_Target: {fileID: 973300872}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

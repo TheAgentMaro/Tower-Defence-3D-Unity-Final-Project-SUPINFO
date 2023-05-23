@@ -19328,6 +19328,7 @@ MonoBehaviour:
   timeBwaves: 2
   SpawnPoint: {fileID: 0}
   WaveTimer: {fileID: 0}
+  WaveCount: 0
 --- !u!4 &1986809824
 Transform:
   m_ObjectHideFlags: 0

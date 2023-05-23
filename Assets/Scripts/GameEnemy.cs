@@ -20,7 +20,7 @@ public class GameEnemy : MonoBehaviour
     public Image HB;
     void Start()
     {
-        target = EnemyMove.points[0];
+        target = EnemyMove.waypoints[0];
         playerHealth = startplayerHealth;
     }
 
@@ -65,7 +65,7 @@ public class GameEnemy : MonoBehaviour
     }
     private void GetNext()
     {
-        size = EnemyMove.points.Length;
+        size = EnemyMove.waypoints.Length;
         waypointIndex++;
         
         if (waypointIndex >= size )
@@ -77,6 +77,6 @@ public class GameEnemy : MonoBehaviour
             return;
         }
 
-        target = EnemyMove.points[waypointIndex];
+        target = EnemyMove.waypoints[waypointIndex];
     }
 }

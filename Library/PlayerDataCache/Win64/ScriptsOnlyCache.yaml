@@ -22,6 +22,8 @@ ScriptsOnlyBuild:
     - PauseMenu
     - PlayerStats
     - WaveSpawner
+    - WaveSpawnerGCTD
+    - WaveSpawnerGTD
     - gameTurretBullet
     PhotonUnityNetworking:
     - Photon.Pun.PhotonAnimatorView
@@ -40,7 +42,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
     PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonEditor
     - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.ServerSettings
@@ -85,6 +86,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
   serializedClasses:
     Assembly-CSharp:
+    - SpawnPoint
     - Waves
     - gameTurretBluePrint
     PhotonRealtime:
@@ -200,33 +202,6 @@ ScriptsOnlyBuild:
     methodName: MenuButton
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectsnakeTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectrobotTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectfishTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectdogTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectcatTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectfishTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectcatTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectrobotTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectsnakeTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
     methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
@@ -239,16 +214,46 @@ ScriptsOnlyBuild:
     methodName: SelectfishTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
+    methodName: SelectrobotTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectfishTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
     methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectrobotTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectfishTurret
+    methodName: SelectcatTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectsnakeTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectcatTurret
@@ -263,16 +268,100 @@ ScriptsOnlyBuild:
     methodName: SelectfishTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
+    methodName: SelectsnakeTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectsnakeTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectrobotTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectdogTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectfishTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectsnakeTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectfishTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectdogTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectrobotTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectrobotTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
     methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectcatTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectrobotTurret
+    methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectsnakeTurret
+    methodName: SelectfishTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: MainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Sell
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: Retry
+  - assembly: Assembly-CSharp
+    fullTypeName: NodeUI
+    methodName: Upgrade
   sceneClasses:
     Assets/Scenes/Levels/GCGame.unity:
     - Class: 1
@@ -317,8 +406,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
@@ -331,8 +418,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1764}
     - Class: 114
       Script: {instanceID: 1826}
-    - Class: 114
-      Script: {instanceID: 1834}
     - Class: 114
       Script: {instanceID: 2472}
     - Class: 114
@@ -352,25 +437,146 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3374}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 3786}
+    - Class: 114
+      Script: {instanceID: 3810}
+    - Class: 114
+      Script: {instanceID: 3842}
+    - Class: 114
+      Script: {instanceID: 4340}
+    - Class: 114
+      Script: {instanceID: 4442}
+    - Class: 114
+      Script: {instanceID: 4456}
+    - Class: 114
+      Script: {instanceID: 4484}
+    - Class: 114
+      Script: {instanceID: 5030}
+    - Class: 114
+      Script: {instanceID: 5138}
+    - Class: 114
+      Script: {instanceID: 5452}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 850595691
+      Script: {instanceID: 0}
+    Assets/Scenes/Levels/GGame.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1548}
+    - Class: 114
+      Script: {instanceID: 1550}
+    - Class: 114
+      Script: {instanceID: 1630}
+    - Class: 114
+      Script: {instanceID: 1754}
+    - Class: 114
+      Script: {instanceID: 1764}
+    - Class: 114
+      Script: {instanceID: 1826}
+    - Class: 114
+      Script: {instanceID: 2472}
+    - Class: 114
+      Script: {instanceID: 2676}
+    - Class: 114
+      Script: {instanceID: 2736}
+    - Class: 114
+      Script: {instanceID: 2764}
+    - Class: 114
+      Script: {instanceID: 2804}
+    - Class: 114
+      Script: {instanceID: 3018}
+    - Class: 114
+      Script: {instanceID: 3188}
+    - Class: 114
+      Script: {instanceID: 3262}
+    - Class: 114
+      Script: {instanceID: 3374}
     - Class: 114
       Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5028}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5444}
+    - Class: 114
+      Script: {instanceID: 5452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -442,8 +648,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
@@ -456,8 +660,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1764}
     - Class: 114
       Script: {instanceID: 1826}
-    - Class: 114
-      Script: {instanceID: 1834}
     - Class: 114
       Script: {instanceID: 2472}
     - Class: 114
@@ -481,21 +683,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5028}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -524,7 +726,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 850595691
       Script: {instanceID: 0}
-    Assets/Scenes/Levels/Level 2.unity:
+    Assets/Scenes/Levels/Level2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -567,8 +769,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
-    - Class: 111
-      Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 1548}
     - Class: 114
@@ -581,8 +781,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1764}
     - Class: 114
       Script: {instanceID: 1826}
-    - Class: 114
-      Script: {instanceID: 1834}
     - Class: 114
       Script: {instanceID: 2472}
     - Class: 114
@@ -606,21 +804,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5028}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -731,21 +929,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5028}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -856,21 +1054,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3786}
     - Class: 114
-      Script: {instanceID: 3840}
+      Script: {instanceID: 3842}
     - Class: 114
-      Script: {instanceID: 4338}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4454}
+      Script: {instanceID: 4456}
     - Class: 114
-      Script: {instanceID: 4482}
+      Script: {instanceID: 4484}
     - Class: 114
-      Script: {instanceID: 5028}
+      Script: {instanceID: 5030}
     - Class: 114
-      Script: {instanceID: 5136}
+      Script: {instanceID: 5138}
     - Class: 114
-      Script: {instanceID: 5448}
+      Script: {instanceID: 5452}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1114,7 +1312,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1177,7 +1375,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 5234}
+      Script: {instanceID: 5236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1276,25 +1474,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 3890}
+      Script: {instanceID: 3892}
     - Class: 114
-      Script: {instanceID: 4246}
+      Script: {instanceID: 4248}
     - Class: 114
-      Script: {instanceID: 4252}
+      Script: {instanceID: 4254}
     - Class: 114
-      Script: {instanceID: 4436}
+      Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 4494}
+      Script: {instanceID: 4496}
     - Class: 114
-      Script: {instanceID: 4604}
-    - Class: 114
-      Script: {instanceID: 4924}
+      Script: {instanceID: 4606}
     - Class: 114
       Script: {instanceID: 4926}
     - Class: 114
-      Script: {instanceID: 5080}
+      Script: {instanceID: 4928}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 5082}
+    - Class: 114
+      Script: {instanceID: 5470}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1375,13 +1573,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3390}
     - Class: 114
-      Script: {instanceID: 4098}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 4298}
+      Script: {instanceID: 4300}
     - Class: 114
-      Script: {instanceID: 4498}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 4904}
+      Script: {instanceID: 4906}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2241,6 +2439,12 @@ ScriptsOnlyBuild:
     className: MoneyUI
   - hash:
       serializedVersion: 2
+      Hash: e8fc302389ba3b2c6c663989bb86b6b5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaveSpawnerGCTD
+  - hash:
+      serializedVersion: 2
       Hash: c7b9385de9fd55499d563ac8783bbda2
     assemblyName: PhotonUnityNetworking.Demos
     namespaceName: Photon.Pun.Demo.Cockpit
@@ -2799,7 +3003,7 @@ ScriptsOnlyBuild:
     className: ThirdPersonUserControl
   - hash:
       serializedVersion: 2
-      Hash: 3c79faadd2ebfcace81188d292a104f2
+      Hash: e0e72869582189bcd5379e194ad59b0c
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: GameLobbyManager
@@ -2871,6 +3075,12 @@ ScriptsOnlyBuild:
     className: SendRateField
   - hash:
       serializedVersion: 2
+      Hash: e8fc302389ba3b2c6c663989bb86b6b5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: WaveSpawnerGTD
+  - hash:
+      serializedVersion: 2
       Hash: 0853a9cfe5cc2b0f4d6ca464f2d8e0b6
     assemblyName: PhotonUnityNetworking.Utilities
     namespaceName: Photon.Pun.UtilityScripts
@@ -2915,9 +3125,10 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Menu/Parametre.unity
   - "Assets/Scenes/Menu/Cr\xE9dits.unity"
   - Assets/Scenes/Levels/Game.unity
-  - Assets/Scenes/Levels/Level 2.unity
+  - Assets/Scenes/Levels/Level2.unity
   - Assets/Scenes/Levels/Level3.unity
   - Assets/Scenes/Levels/Level4.unity
+  - Assets/Scenes/Levels/GGame.unity
   - Assets/Scenes/Levels/GCGame.unity
   playerPath: C:/Git/TowerDefence 3D - 2PROJ/Tower-Defence-3D-Unity-Final-Project-SUPINFO/Anblisoft
     -SupinfoTD.exe
