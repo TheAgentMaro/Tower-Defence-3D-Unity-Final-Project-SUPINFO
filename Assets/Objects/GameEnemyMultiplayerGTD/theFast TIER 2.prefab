@@ -378,13 +378,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerArmor: 10
-  rm: 10
   playerSpeed: 10
   startplayerHealth: 100
-  waypointIndex: 0
-  size: 0
-  enemievalue: 50
-  HB: {fileID: 0}
+  enemyValue: 50
+  HB: {fileID: 1525984196}
 --- !u!1 &6333964790135827204
 GameObject:
   m_ObjectHideFlags: 0

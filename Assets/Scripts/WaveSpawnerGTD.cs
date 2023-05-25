@@ -1,20 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 [System.Serializable]
-public class SpawnPointWaves
+public class SpawnPoint
 {
-    public Transform spawnTransform;
     public Waves[] waves;
-    public Transform[] spawnPoints;
+    public List<Transform> waypoints;
+}
+
+[System.Serializable]
+public class SpawningPoint
+{
+    public List<SpawnPoint> spawnPoints;
 }
 
 public class WaveSpawnerGTD : MonoBehaviour
 {
     public static int enemiesAlive = 0;
 
-    public SpawnPointWaves[] spawnPointWaves;
+    public List<SpawningPoint> spawningPoints;
 
     private float waveCountdown = 5f;
     private int currentWaveIndex = 0;
@@ -38,7 +44,7 @@ public class WaveSpawnerGTD : MonoBehaviour
         if (waveCountdown <= 0)
         {
             StartCoroutine(SpawnWave());
-            waveCountdown = spawnPointWaves[currentWaveIndex].waves[0].WaveRate;
+            waveCountdown = spawningPoints[currentWaveIndex].spawnPoints[0].waves[0].WaveRate;
         }
     }
 
@@ -46,46 +52,99 @@ public class WaveSpawnerGTD : MonoBehaviour
     {
         PlayerStats.rounds++;
 
-        SpawnPointWaves currentSpawnPointWave = spawnPointWaves[currentWaveIndex];
-        Waves[] waves = currentSpawnPointWave.waves;
+        List<Coroutine> spawnCoroutines = new List<Coroutine>();
 
-        for (int i = 0; i < waves.Length; i++)
+        // Get the maximum wave count among all spawn points
+        int maxWaveCount = GetMaxWaveCount();
+
+        for (int l = 0; l < maxWaveCount; l++)
         {
-            Waves currentWave = waves[i];
-
-            for (int j = 0; j < currentWave.WaveCount; j++)
+            for (int i = 0; i < spawningPoints.Count; i++)
             {
-                SpawnEnemy(currentWave.gameEnemie, currentSpawnPointWave.spawnPoints);
-                yield return new WaitForSeconds(1f / currentWave.WaveRate);
+                SpawningPoint currentSpawningPoint = spawningPoints[i];
+                List<SpawnPoint> spawnPoints = currentSpawningPoint.spawnPoints;
+
+                for (int j = 0; j < spawnPoints.Count; j++)
+                {
+                    SpawnPoint currentSpawnPoint = spawnPoints[j];
+                    Waves[] waves = currentSpawnPoint.waves;
+
+                    for (int k = 0; k < waves.Length; k++)
+                    {
+                        Waves currentWave = waves[k];
+
+                        if (l < currentWave.WaveCount)
+                        {
+                            Transform waypoint = currentSpawnPoint.waypoints[Random.Range(0, currentSpawnPoint.waypoints.Count)];
+
+                            Coroutine spawnCoroutine = StartCoroutine(SpawnEnemy(currentWave.gameEnemie, waypoint, currentSpawnPoint));
+                            spawnCoroutines.Add(spawnCoroutine);
+
+                            // Delay between enemy spawns within a wave
+                            if (k < waves.Length - 1 || l < currentWave.WaveCount - 1)
+                            {
+                                yield return new WaitForSeconds(currentWave.WaveRate);
+                            }
+                        }
+                    }
+                }
             }
+        }
+
+        foreach (Coroutine spawnCoroutine in spawnCoroutines)
+        {
+            yield return spawnCoroutine;
         }
 
         currentWaveIndex++;
         currentEnemyIndex = 0;
     }
 
-    void SpawnEnemy(GameObject gameEnemie, Transform[] spawnPoints)
+    int GetMaxWaveCount()
     {
-        if (spawnPoints.Length == 0)
+        int maxWaveCount = 0;
+
+        for (int i = 0; i < spawningPoints.Count; i++)
         {
-            Debug.LogWarning("No spawn points assigned for enemy spawning.");
-            return;
+            SpawningPoint currentSpawningPoint = spawningPoints[i];
+            List<SpawnPoint> spawnPoints = currentSpawningPoint.spawnPoints;
+
+            for (int j = 0; j < spawnPoints.Count; j++)
+            {
+                SpawnPoint currentSpawnPoint = spawnPoints[j];
+                Waves[] waves = currentSpawnPoint.waves;
+
+                foreach (Waves wave in waves)
+                {
+                    if (wave.WaveCount > maxWaveCount)
+                    {
+                        maxWaveCount = wave.WaveCount;
+                    }
+                }
+            }
         }
 
-        if (gameEnemie == null)
+        return maxWaveCount;
+    }
+
+
+    IEnumerator SpawnEnemy(GameObject gameEnemy, Transform waypoint, SpawnPoint currentSpawnPoint)
+    {
+        if (gameEnemy == null)
         {
             Debug.LogWarning("No enemy prefab assigned for spawning.");
-            return;
+            yield break;
         }
 
-        int spawnIndex = currentEnemyIndex % spawnPoints.Length;
-        GameObject spawnedEnemy = Instantiate(gameEnemie, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation);
+        GameObject spawnedEnemy = Instantiate(gameEnemy, waypoint.position, waypoint.rotation);
         GameEnemyGTD enemyComponent = spawnedEnemy.GetComponent<GameEnemyGTD>();
         if (enemyComponent != null)
         {
-            enemyComponent.SetWaypoints(spawnPoints);
+            enemyComponent.SetWaypoints(currentSpawnPoint.waypoints.ToArray());
         }
         enemiesAlive++;
         currentEnemyIndex++;
+
+        yield return null;
     }
 }

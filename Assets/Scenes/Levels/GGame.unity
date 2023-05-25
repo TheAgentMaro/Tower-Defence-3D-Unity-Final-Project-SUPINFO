@@ -34008,203 +34008,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03440c58cf4a1f345a24a0872245152b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPointWaves:
-  - spawnTransform: {fileID: 157868918}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 1229060510}
-    - {fileID: 1103704490}
-    - {fileID: 497848956}
-    - {fileID: 1681671647}
-    - {fileID: 1028040910}
-    - {fileID: 1332902255}
-  - spawnTransform: {fileID: 565273907}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 372356353}
-    - {fileID: 104475031}
-    - {fileID: 372438647}
-    - {fileID: 167242092}
-    - {fileID: 1025877959}
-    - {fileID: 712461812}
-    - {fileID: 1958571256}
-  - spawnTransform: {fileID: 2073325725}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 1838723174}
-    - {fileID: 1981448724}
-    - {fileID: 557545788}
-  - spawnTransform: {fileID: 99688062}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 1005341155}
-    - {fileID: 1458865748}
-    - {fileID: 85678457}
-    - {fileID: 1263279834}
-    - {fileID: 1404553312}
-    - {fileID: 1785146236}
-    - {fileID: 1743077264}
-    - {fileID: 1448724304}
-    - {fileID: 169242624}
-  - spawnTransform: {fileID: 1774550677}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 1781954335}
-    - {fileID: 1331762548}
-    - {fileID: 1357189976}
-    - {fileID: 146947231}
-    - {fileID: 1941621001}
-    - {fileID: 207777584}
-    - {fileID: 1123242369}
-    - {fileID: 1652764698}
-    - {fileID: 1298548796}
-    - {fileID: 1930934537}
-    - {fileID: 2017140085}
-  - spawnTransform: {fileID: 1536416561}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 125230965}
-    - {fileID: 1405221449}
-    - {fileID: 719476594}
-    - {fileID: 357833746}
-    - {fileID: 1275268105}
-    - {fileID: 185485976}
-  - spawnTransform: {fileID: 470776435}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 2131241202}
-    - {fileID: 772060280}
-    - {fileID: 1056587557}
-    - {fileID: 959062951}
-    - {fileID: 1073595411}
-    - {fileID: 1559855871}
-    - {fileID: 133174508}
-    - {fileID: 1373299067}
-  - spawnTransform: {fileID: 1786210878}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 777466434}
-    - {fileID: 902654777}
-    - {fileID: 1193275555}
-    - {fileID: 1031535152}
-    - {fileID: 317795871}
-  - spawnTransform: {fileID: 640208475}
-    waves:
-    - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 1311290861401530, guid: 48439988820869549bfa9b9019b923e6,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    - gameEnemie: {fileID: 5241608253113823065, guid: 3d26259d73d680e4a93fc30a96af0440,
-        type: 3}
-      WaveCount: 5
-      WaveRate: 1
-    spawnPoints:
-    - {fileID: 1647787184}
-    - {fileID: 1478613946}
-    - {fileID: 1548342}
-    - {fileID: 1620957867}
-    - {fileID: 1219379267}
-    - {fileID: 1787186460}
+  spawningPoints:
+  - spawnPoints:
+    - waves:
+      - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
+          type: 3}
+        WaveCount: 5
+        WaveRate: 1
+      waypoints:
+      - {fileID: 157868918}
+      - {fileID: 1229060510}
+      - {fileID: 1103704490}
+      - {fileID: 497848956}
+      - {fileID: 1681671647}
+      - {fileID: 1028040910}
+      - {fileID: 1332902255}
+  - spawnPoints:
+    - waves:
+      - gameEnemie: {fileID: 5241608253113823065, guid: 7d5beafb695cb8d48a87fcbd2f76334c,
+          type: 3}
+        WaveCount: 5
+        WaveRate: 1
+      waypoints:
+      - {fileID: 565273907}
+      - {fileID: 372356353}
+      - {fileID: 104475031}
+      - {fileID: 372438647}
+      - {fileID: 167242092}
+      - {fileID: 1025877959}
+      - {fileID: 712461812}
+      - {fileID: 1958571256}
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
+  - spawnPoints: []
   waveTimer: {fileID: 1883548295}
 --- !u!1001 &806395240
 PrefabInstance:

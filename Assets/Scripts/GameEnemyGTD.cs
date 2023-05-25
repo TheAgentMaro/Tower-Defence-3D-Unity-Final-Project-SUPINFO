@@ -5,19 +5,24 @@ public class GameEnemyGTD : MonoBehaviour
 {
     private bool playerDead = false;
     public float playerArmor = 10f;
-    public float rm = 10f;
     public float playerSpeed = 10f;
     private float playerHealth;
     public float startplayerHealth = 100;
     private Transform[] waypoints;
     private int currentWaypointIndex = 0;
-    public int enemievalue = 50;
+    public int enemyValue = 50;
 
     public Image HB;
 
     public void SetWaypoints(Transform[] waypoints)
     {
         this.waypoints = waypoints;
+        transform.position = waypoints[currentWaypointIndex].position;
+    }
+
+    public void SetSpawnIndex(int index)
+    {
+        currentWaypointIndex = index;
         transform.position = waypoints[currentWaypointIndex].position;
     }
 
@@ -55,42 +60,51 @@ public class GameEnemyGTD : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int amount, bool type)
+    public void TakeDamage(float amount, bool type)
     {
-        float damage;
-        if (type)
+        float damage = amount;
+
+        if (!type) // Only subtract armor if type is false
         {
-            damage = amount - rm;
+            damage -= playerArmor;
         }
-        else
-        {
-            damage = amount - playerArmor;
-        }
+
         if (damage < 0)
         {
             damage = 1;
         }
+
         playerHealth -= damage;
         HB.fillAmount = (playerHealth / startplayerHealth);
+
         if (playerHealth <= 0 && !playerDead)
         {
             playerDead = true;
             Dead();
         }
     }
-
     private void Dead()
     {
-        PlayerStats.money += enemievalue;
+        PlayerStats.money += enemyValue;
         Destroy(gameObject);
         WaveSpawnerGTD.enemiesAlive--;
     }
 
+
     private void ReachEnd()
     {
-        PlayerStats.lives--;
+        if (!playerDead) // Check if the player is not already dead
+        {
+            PlayerStats.lives--;
+            playerDead = true; // Set the playerDead flag to true before deducting lives
+
+            if (PlayerStats.lives <= 0)
+            {
+                // Game over condition, handle it as needed
+            }
+        }
+
         WaveSpawnerGTD.enemiesAlive--;
         Destroy(gameObject);
-        playerDead = true;
     }
 }

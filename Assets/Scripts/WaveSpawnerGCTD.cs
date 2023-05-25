@@ -4,13 +4,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
 
-[System.Serializable]
-public class SpawnPoint
-{
-    public Transform spawnTransform;
-    public Transform[] waypoints;
-    public Waves[] waves;
-}
+
 
 public class WaveSpawnerGCTD : MonoBehaviour
 {

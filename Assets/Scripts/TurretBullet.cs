@@ -50,13 +50,15 @@ public class gameTurretBullet : MonoBehaviour
     void Damage(Transform enemy)
     {
         GameEnemy e = enemy.GetComponent<GameEnemy>();
-        if(e!= null)
+        GameEnemyGTD enemyGTD = enemy.GetComponent<GameEnemyGTD>();
+        //GameEnemyGCTD enemyGTD = enemy.GetComponent<GameEnemyGCTD>();
+        if (enemyGTD != null)
+        {
+            enemyGTD.TakeDamage(takeDamage, type);
+        }
+        if (e!= null )
         {
             e.TakeDammage(takeDamage, type);
-        }
-        else
-        {
-            Debug.LogError("ERREUR, pas de script enemie!");
         }
     }
     void Explode()

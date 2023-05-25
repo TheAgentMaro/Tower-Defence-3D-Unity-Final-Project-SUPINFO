@@ -390,11 +390,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerArmor: 10
-  rm: 10
   playerSpeed: 10
   startplayerHealth: 100
-  enemievalue: 50
-  HB: {fileID: 0}
+  enemyValue: 50
+  HB: {fileID: 1525984196}
 --- !u!1 &6487604793873677662
 GameObject:
   m_ObjectHideFlags: 0

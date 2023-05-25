@@ -76,11 +76,17 @@ public class GameTurret : MonoBehaviour
     }
     void Shoot()
     {
-       GameObject balleGO= Instantiate(bulletPrefab, canon.position, canon.rotation);
-        gameTurretBullet Bullet = balleGO.GetComponent<gameTurretBullet>();
-        if(Bullet != null)
+        if (target == null)
         {
-            Bullet.Seek(target);
+            return;
+        }
+
+        GameObject bulletGO = Instantiate(bulletPrefab, canon.position, canon.rotation);
+        gameTurretBullet bullet = bulletGO.GetComponent<gameTurretBullet>();
+
+        if (bullet != null)
+        {
+            bullet.Seek(target);
         }
     }
 }
