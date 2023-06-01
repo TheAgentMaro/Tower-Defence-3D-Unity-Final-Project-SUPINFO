@@ -20,9 +20,27 @@ public class WaveSpawner : MonoBehaviour
     private Text WaveTimer;
 
     public int WaveCount = 0;
-    // Update is called once per frame
+
+    private bool isWinGame = false;
+
+    [SerializeField]
+    private GameObject winGameUI;
+
+    void Start()
+    {
+        // Deactivate the win game UI at the start
+        winGameUI.SetActive(false);
+    }
+
     void Update()
     {
+        if (isWinGame)
+        {
+            // Handle win game state
+            ShowWinGameMenu();
+            return;
+        }
+
         if (enemiesAlive > 0)
         {
             return;
@@ -38,22 +56,35 @@ public class WaveSpawner : MonoBehaviour
             WaveCountdown = timeBwaves;
         }
     }
+
     IEnumerator SpawnWave()
     {
-        
+        if (WaveCount >= waveT.Length)
+        {
+            // Reached the end of waveT array, win game
+            isWinGame = true;
+            yield break;
+        }
+
         PlayerStats.rounds++;
 
         Waves tmp = waveT[WaveCount];
         for (int i = 0; i < tmp.WaveCount; i++)
         {
             SpawnEnemie(tmp.gameEnemie);
-            yield return new WaitForSeconds(1f/tmp.WaveRate);
+            yield return new WaitForSeconds(1f / tmp.WaveRate);
         }
         WaveCount++;
     }
+
     void SpawnEnemie(GameObject gameEnemie)
     {
-        Instantiate(gameEnemie, SpawnPoint.position,SpawnPoint.rotation);
+        Instantiate(gameEnemie, SpawnPoint.position, SpawnPoint.rotation);
         enemiesAlive++;
+    }
+
+    void ShowWinGameMenu()
+    {
+        winGameUI.SetActive(true);
     }
 }

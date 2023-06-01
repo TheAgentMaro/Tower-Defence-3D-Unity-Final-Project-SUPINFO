@@ -268,7 +268,7 @@ GameObject:
   - component: {fileID: 5188605195343418875}
   - component: {fileID: 413175049363368082}
   - component: {fileID: 7633181268652269471}
-  - component: {fileID: -6114433672763125456}
+  - component: {fileID: 1752895693190315800}
   m_Layer: 0
   m_Name: base
   m_TagString: gameEnemie
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01d0329335dce234aae220b058da0f1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-6114433672763125456
+--- !u!114 &1752895693190315800
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
