@@ -170,7 +170,6 @@ public class GameLobbyManager : MonoBehaviour
             index++;
         }
 
-
         if (Players.Count >= 2)
         {
             EnoughPlayersAreIn();

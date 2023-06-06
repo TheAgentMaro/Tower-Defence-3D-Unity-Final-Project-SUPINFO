@@ -15,10 +15,6 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        if (Input.GetKeyDown("l"))
-        {
-            EndGame();
-        }
         if(PlayerStats.lives<=0)
         {
             EndGame();

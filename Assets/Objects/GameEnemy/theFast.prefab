@@ -353,7 +353,7 @@ MonoBehaviour:
   startplayerHealth: 100
   waypointIndex: 0
   size: 0
-  enemievalue: 10
+  enemievalue: 15
   HB: {fileID: 7804345879541242522}
 --- !u!135 &5815617228714996891
 SphereCollider:

@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 6832772088592285351}
   - component: {fileID: 5188605195343418875}
   - component: {fileID: 413175049363368082}
-  - component: {fileID: -748218213067485700}
+  - component: {fileID: 4333323078818728444}
   m_Layer: 0
   m_Name: TONKs TIER 2
   m_TagString: gameEnemie
@@ -598,7 +598,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-748218213067485700
+--- !u!114 &4333323078818728444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -607,17 +607,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5241608253113823065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a6f8e86087a184ca33b176d6131942, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bcf903c4d19c714aa52aa81bc34712a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerArmor: 10
-  rm: 10
   playerSpeed: 10
   startplayerHealth: 100
-  waypointIndex: 0
-  spawnPointIndex: 0
-  enemievalue: 50
-  HB: {fileID: 0}
+  enemyValue: 50
+  HB: {fileID: 1525984196}
 --- !u!1001 &9204785617752795981
 PrefabInstance:
   m_ObjectHideFlags: 0

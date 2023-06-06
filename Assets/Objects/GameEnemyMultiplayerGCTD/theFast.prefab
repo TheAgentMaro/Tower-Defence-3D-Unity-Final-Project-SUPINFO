@@ -304,8 +304,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4303844821561524}
   - component: {fileID: 5815617228714996891}
+  - component: {fileID: -3657408018267451776}
   - component: {fileID: 1206613127366285631}
-  - component: {fileID: -8067436396668011938}
   m_Layer: 0
   m_Name: theFast
   m_TagString: gameEnemie
@@ -356,15 +356,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1206613127366285631
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1311290861401530}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &-8067436396668011938
+--- !u!114 &-3657408018267451776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -373,17 +365,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1311290861401530}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4a6f8e86087a184ca33b176d6131942, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bcf903c4d19c714aa52aa81bc34712a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerArmor: 10
-  rm: 10
   playerSpeed: 10
   startplayerHealth: 100
-  waypointIndex: 0
-  spawnPointIndex: 0
-  enemievalue: 50
-  HB: {fileID: 0}
+  enemyValue: 50
+  HB: {fileID: 7804345879541242522}
+--- !u!33 &1206613127366285631
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311290861401530}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1325880688823160
 GameObject:
   m_ObjectHideFlags: 0
