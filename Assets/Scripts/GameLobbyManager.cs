@@ -161,13 +161,21 @@ public class GameLobbyManager : MonoBehaviour
         int index = 0;
         foreach (int id in Players.Keys)
         {
-            PlayerNameTextList[index].text = Players[id].NickName;
+            if (index < PlayerNameTextList.Count && index < PlayerColorList.Count)
+            {
+                PlayerNameTextList[index].text = Players[id].NickName;
 
-            // Set the color for the image component
-            Color assignedColor = GetAssignedColor(Players[id]);
-            PlayerColorList[index].color = assignedColor;
+                // Set the color for the image component
+                Color assignedColor = GetAssignedColor(Players[id]);
+                PlayerColorList[index].color = assignedColor;
 
-            index++;
+                index++;
+            }
+            else
+            {
+                Debug.LogWarning("Not enough UI elements to display all joined players");
+                break;
+            }
         }
 
         if (Players.Count >= 2)
