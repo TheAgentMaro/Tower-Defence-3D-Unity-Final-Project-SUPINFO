@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 [System.Serializable]
 public class SpawnPointData
 {
@@ -17,6 +18,7 @@ public class SpawnPointData
 
 public class GameLobbyManager : MonoBehaviour
 {
+    private ChatManager chatManager;
     //UI elements we need
     public GameObject OpenToMultiplayerObj;
     public GameObject PlayMultiplayerButtonObj;
@@ -45,6 +47,8 @@ public class GameLobbyManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        chatManager = gameObject.AddComponent<ChatManager>();
+
         PlayMultiplayerButtonObj.SetActive(false);
         CancelCreateRoomButtonObj.SetActive(false);
         
@@ -55,6 +59,12 @@ public class GameLobbyManager : MonoBehaviour
     void Update()
     {
 
+    }
+
+    
+    public void SendChatMessage(string message)
+    {
+        chatManager.SendMessage(message);
     }
 
     public void QuitButton()
@@ -74,16 +84,16 @@ public class GameLobbyManager : MonoBehaviour
 
         if (selectedGameMode == "GTD")
         {
-            sceneName = "GTDScene"; // Replace with the actual scene name for GTD mode
+            sceneName = "GGame"; // Replace with the actual scene name for GTD mode
         }
         else if (selectedGameMode == "GTCD")
         {
-            sceneName = "GTCDScene"; // Replace with the actual scene name for GTCD mode
+            sceneName = "GCGame"; // Replace with the actual scene name for GTCD mode
         }
         else
         {
             Debug.LogWarning("Unknown game mode! Setting scene name to default.");
-            sceneName = "GTDScene"; // Set a default scene name
+            sceneName = "GGame"; 
         }
 
         roomController.StartGame(sceneName);
@@ -99,10 +109,8 @@ public class GameLobbyManager : MonoBehaviour
         // Connect to the server
         gameLauncher.Connect();
 
-        // Assign colors to image components
         for (int i = 0; i < PlayerColorList.Count; i++)
         {
-            // Check if there are available colors to assign
             if (i < AvailableColors.Count)
             {
                 // Assign the color to the image component
@@ -111,7 +119,6 @@ public class GameLobbyManager : MonoBehaviour
             }
             else
             {
-                // If there are no more available colors, deactivate the image component
                 PlayerColorList[i].gameObject.SetActive(false);
             }
         }
@@ -186,8 +193,6 @@ public class GameLobbyManager : MonoBehaviour
 
     private Color GetAssignedColor(Player player)
     {
-        // Implement your logic for assigning colors to players
-        // This example assigns colors based on the player's actor number
         int colorIndex = player.ActorNumber % AvailableColors.Count;
         return AvailableColors[colorIndex];
     }

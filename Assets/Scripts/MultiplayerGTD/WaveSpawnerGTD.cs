@@ -8,12 +8,15 @@ public class SpawnPoint
 {
     public Waves[] waves;
     public List<Transform> waypoints;
+    
 }
 
 [System.Serializable]
 public class SpawningPoint
 {
     public List<SpawnPoint> spawnPoints;
+    public int remainingEnemiesInSpawnPoint;
+    public WaveSpawnerGCTD spawner;
 }
 
 public class WaveSpawnerGTD : MonoBehaviour
@@ -44,7 +47,7 @@ public class WaveSpawnerGTD : MonoBehaviour
         if (waveCountdown <= 0)
         {
             StartCoroutine(SpawnWave());
-            waveCountdown = spawningPoints[currentWaveIndex].spawnPoints[0].waves[0].WaveRate;
+            waveCountdown = spawningPoints[currentWaveIndex].spawnPoints[0].waves[0].waveRate;
         }
     }
 
@@ -73,11 +76,11 @@ public class WaveSpawnerGTD : MonoBehaviour
                     {
                         Waves currentWave = waves[k];
 
-                        if (l < currentWave.WaveCount)
+                        if (l < currentWave.waveCount)
                         {
                             Transform waypoint = currentSpawnPoint.waypoints[Random.Range(0, currentSpawnPoint.waypoints.Count)];
 
-                            for (int m = 0; m < currentWave.WaveCount; m++)
+                            for (int m = 0; m < currentWave.waveCount; m++)
                             {
                                 GameObject gameEnemy = currentWave.gameEnemie;
 
@@ -87,7 +90,7 @@ public class WaveSpawnerGTD : MonoBehaviour
                                     spawnCoroutines.Add(spawnCoroutine);
 
                                     // Delay between enemy spawns within a wave
-                                    yield return new WaitForSeconds(currentWave.WaveRate);
+                                    yield return new WaitForSeconds(currentWave.waveRate);
                                 }
                             }
                         }
@@ -121,9 +124,9 @@ public class WaveSpawnerGTD : MonoBehaviour
 
                 foreach (Waves wave in waves)
                 {
-                    if (wave.WaveCount > maxWaveCount)
+                    if (wave.waveCount > maxWaveCount)
                     {
-                        maxWaveCount = wave.WaveCount;
+                        maxWaveCount = wave.waveCount;
                     }
                 }
             }

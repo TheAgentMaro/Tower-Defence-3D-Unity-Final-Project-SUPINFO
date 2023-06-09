@@ -69,10 +69,10 @@ public class WaveSpawner : MonoBehaviour
         PlayerStats.rounds++;
 
         Waves tmp = waveT[WaveCount];
-        for (int i = 0; i < tmp.WaveCount; i++)
+        for (int i = 0; i < tmp.waveCount; i++)
         {
             SpawnEnemie(tmp.gameEnemie);
-            yield return new WaitForSeconds(1f / tmp.WaveRate);
+            yield return new WaitForSeconds(1f / tmp.waveRate);
         }
         WaveCount++;
     }

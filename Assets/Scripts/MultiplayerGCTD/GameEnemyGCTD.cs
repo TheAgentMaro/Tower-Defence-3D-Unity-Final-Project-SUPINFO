@@ -14,6 +14,13 @@ public class GameEnemyGCTD : MonoBehaviour
 
     public Image HB;
 
+    public WaveSpawnerGCTD spawner;
+
+    public void SetSpawner(WaveSpawnerGCTD spawner)
+    {
+        this.spawner = spawner;
+    }
+
     public void SetWaypoints(Transform[] waypoints)
     {
         this.waypoints = waypoints;
@@ -87,24 +94,16 @@ public class GameEnemyGCTD : MonoBehaviour
     {
         PlayerStats.money += enemyValue;
         Destroy(gameObject);
-        WaveSpawnerGTD.enemiesAlive--;
+        WaveSpawnerGCTD.enemiesAlive--;
     }
-
 
     private void ReachEnd()
     {
-        if (!playerDead) // Check if the player is not already dead
+        if (!playerDead)
         {
-            PlayerStats.lives--;
-            playerDead = true; // Set the playerDead flag to true before deducting lives
-
-            if (PlayerStats.lives <= 0)
-            {
-                // Game over condition, handle it as needed
-            }
+            playerDead = true; 
         }
-
-        WaveSpawnerGTD.enemiesAlive--;
+        WaveSpawnerGCTD.enemiesAlive--;
         Destroy(gameObject);
     }
 }

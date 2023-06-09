@@ -51,10 +51,14 @@ public class gameTurretBullet : MonoBehaviour
     {
         GameEnemy e = enemy.GetComponent<GameEnemy>();
         GameEnemyGTD enemyGTD = enemy.GetComponent<GameEnemyGTD>();
-        //GameEnemyGCTD enemyGTD = enemy.GetComponent<GameEnemyGCTD>();
+        GameEnemyGCTD enemyGCTD = enemy.GetComponent<GameEnemyGCTD>();
         if (enemyGTD != null)
         {
             enemyGTD.TakeDamage(takeDamage, type);
+        }
+        if (enemyGCTD != null)
+        {
+            enemyGCTD.TakeDamage(takeDamage, type);
         }
         if (e!= null )
         {

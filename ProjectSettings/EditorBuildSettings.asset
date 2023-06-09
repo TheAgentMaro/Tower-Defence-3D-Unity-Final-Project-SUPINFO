@@ -41,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/GGame.unity
     guid: 54eb02b44739e9c4b9765a4b7cd6667e
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Levels/GCGame.unity
     guid: 4a91e980e85df8849885b8722b3e11b1

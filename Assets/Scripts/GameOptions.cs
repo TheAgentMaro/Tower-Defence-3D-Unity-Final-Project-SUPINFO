@@ -10,9 +10,6 @@ public class GameOptions : MonoBehaviour
     #region Private Constants
 
     const string playerNamePrefKey = "PlayerName";
-    const string highestWavePrefKey = "HighestWave";
-    const string totalWavePrefKey = "TotalWaves";
-    const string totalEnemiesKilledPrefKey = "TotalEnemiesKilled";
     const string isMultiplayerPrefKey = "IsMultiplayer";
     const string volumePrefKey = "Volume";
 
@@ -79,7 +76,6 @@ public class GameOptions : MonoBehaviour
         return PlayerPrefs.GetString(playerNamePrefKey, string.Empty);
     }
 
-    //sets the username to whatever is given as long as given is not empty
     public static void SetUsername(string newName)
     {
         newName = newName.Trim();
@@ -153,22 +149,15 @@ public class GameOptions : MonoBehaviour
         }
     }
 
-    //Save all used settings to file :
     public void WriteSettingsToFile()
     {
-        //Save player name
         SetUsername(UserNameInput.text);
         /*
-        // Save resolution
         PlayerPrefs.SetInt("Resolution", resolutionDropdown.value);*/
 
         // Save volume
         PlayerPrefs.SetFloat("Volume", audioSource.volume);
 
         PlayerPrefs.Save();
-
-        /*        // Save highest wave
-                int highestWave = GameManager.Instance.HighestWave;
-                PlayerPrefs.SetInt(highestWavePrefKey, highestWave);*/
     }
 }

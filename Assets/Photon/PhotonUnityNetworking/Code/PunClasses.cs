@@ -815,6 +815,11 @@ namespace Photon.Pun
                 }
             }
         }
+
+        public void SendNext(Action incrementWaves)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

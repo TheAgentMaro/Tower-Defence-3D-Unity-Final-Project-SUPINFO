@@ -2,12 +2,17 @@
 
 public class EnemyMoveGCTD : MonoBehaviour
 {
-    public Transform[] waypoints; 
+    public static Transform[] waypoints;
 
-    // Start is called before the first frame update
-    void Awake()
+    private void Awake()
+    {
+        InitializeWaypoints();
+    }
+
+    private void InitializeWaypoints()
     {
         waypoints = new Transform[transform.childCount];
+
         for (int i = 0; i < waypoints.Length; i++)
         {
             waypoints[i] = transform.GetChild(i);

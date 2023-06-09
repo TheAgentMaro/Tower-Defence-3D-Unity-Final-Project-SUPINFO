@@ -201,7 +201,6 @@ namespace Assets.Scripts.NetworkClasses
 
         public override void OnPlayerEnteredRoom(Player player)
         {
-            //Debug.Log("OnPlayerEnteredRoom was called");
             OnSomeoneJoined(PhotonNetwork.CurrentRoom.Players);
         }
 
@@ -209,7 +208,6 @@ namespace Assets.Scripts.NetworkClasses
         {
             Debug.Log("Leaving room");
             PhotonNetwork.LeaveRoom();
-            //PhotonNetwork.SendAllOutgoingCommands();
         }
 
         public void DisconnectFromGame()

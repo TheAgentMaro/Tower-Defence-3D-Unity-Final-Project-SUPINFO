@@ -344,6 +344,7 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/BuildManager.cs"
 "Assets/Scripts/CameraController.cs"
+"Assets/Scripts/ChatUI.cs"
 "Assets/Scripts/EnemyMove.cs"
 "Assets/Scripts/GameEnemy.cs"
 "Assets/Scripts/GameLobbyManager.cs"
@@ -362,6 +363,7 @@
 "Assets/Scripts/MultiplayerGTD/EnemyMoveGTD.cs"
 "Assets/Scripts/MultiplayerGTD/GameEnemyGTD.cs"
 "Assets/Scripts/MultiplayerGTD/WaveSpawnerGTD.cs"
+"Assets/Scripts/NetworkClasses/ChatManager.cs"
 "Assets/Scripts/NetworkClasses/GameLauncher.cs"
 "Assets/Scripts/NetworkClasses/GameSetupController.cs"
 "Assets/Scripts/NetworkClasses/NetworkingGameManager.cs"
@@ -377,6 +379,7 @@
 "Assets/Scripts/TurretBullet.cs"
 "Assets/Scripts/Waves.cs"
 "Assets/Scripts/WaveSpawner.cs"
+"Assets/Scripts/WavesUI.cs"
 -langversion:9.0
 
 /deterministic

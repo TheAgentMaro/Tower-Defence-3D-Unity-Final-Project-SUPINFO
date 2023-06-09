@@ -96,12 +96,7 @@ public class GameEnemyGTD : MonoBehaviour
         if (!playerDead) // Check if the player is not already dead
         {
             PlayerStats.lives--;
-            playerDead = true; // Set the playerDead flag to true before deducting lives
-
-            if (PlayerStats.lives <= 0)
-            {
-                // Game over condition, handle it as needed
-            }
+            playerDead = true;
         }
 
         WaveSpawnerGTD.enemiesAlive--;
