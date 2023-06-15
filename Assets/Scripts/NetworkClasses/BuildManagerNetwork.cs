@@ -50,7 +50,6 @@ public class BuildManagerNetwork : MonoBehaviour
         };
     }
 
-
     public void SelectgameTurretToBuild(gameTurretBluePrint gameTurret)
     {
         selectedBlueprint = gameTurret;
@@ -72,20 +71,6 @@ public class BuildManagerNetwork : MonoBehaviour
         selectedNodeNetwork = null;
     }
 
-    public gameTurretBluePrint GetTurretBlueprint(int index)
-    {
-        if (index >= 0 && index < turretBlueprints.Count)
-        {
-            return turretBlueprints[index];
-        }
-        else
-        {
-            Debug.LogWarning("Invalid turret blueprint index: " + index);
-            return null;
-        }
-    }
-
-
     public int GetTurretBlueprintIndex()
     {
         if (selectedBlueprint != null)
@@ -103,7 +88,6 @@ public class BuildManagerNetwork : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Invalid turret blueprint index: " + index);
             return null;
         }
     }
@@ -133,26 +117,4 @@ public class BuildManagerNetwork : MonoBehaviour
         Deselect();
     }
 
-
-    [System.Serializable]
-    public struct BuildData
-    {
-        public gameTurretBluePrint gameTurretToBuild;
-        public Vector3 selectedNodePosition;
-    }
-
-    public BuildData GetBuildData()
-    {
-        return new BuildData()
-        {
-            gameTurretToBuild = selectedBlueprint,
-            selectedNodePosition = GetSelectedNodePosition()
-        };
-    }
-
-    public void UpdateBuildData(BuildData buildData)
-    {
-        selectedBlueprint = buildData.gameTurretToBuild;
-        SetSelectedNodePosition(buildData.selectedNodePosition);
-    }
 }

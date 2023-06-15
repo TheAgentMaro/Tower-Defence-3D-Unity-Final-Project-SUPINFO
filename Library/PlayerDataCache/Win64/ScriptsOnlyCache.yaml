@@ -54,8 +54,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
@@ -233,16 +231,16 @@ ScriptsOnlyBuild:
     methodName: ChatConnectOnClick
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectcatTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
     methodName: SelectrobotTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectfishTurret
+    methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectsnakeTurret
+    methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectfishTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectdogTurret
@@ -281,22 +279,25 @@ ScriptsOnlyBuild:
     methodName: Retry
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectcatTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectsnakeTurret
+    methodName: SelectrobotTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
+    methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
     methodName: SelectfishTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectrobotTurret
+    methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameWin
     methodName: LevelLobby
+  - assembly: Assembly-CSharp
+    fullTypeName: NetworkNodeUI
+    methodName: Sell
   - assembly: Assembly-CSharp
     fullTypeName: GameWin
     methodName: Retry
@@ -322,14 +323,14 @@ ScriptsOnlyBuild:
     fullTypeName: GameOver
     methodName: LevelLobby
   - assembly: Assembly-CSharp
+    fullTypeName: NetworkNodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
     fullTypeName: GameWin
     methodName: MainMenu
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectTurretSnakeNetwork
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectTurretDogNetwork
+    methodName: SelectTurretFishNetwork
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectTurretRobotNetwork
@@ -338,7 +339,10 @@ ScriptsOnlyBuild:
     methodName: SelectTurretCatNetwork
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectTurretFishNetwork
+    methodName: SelectTurretDogNetwork
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectTurretSnakeNetwork
   - assembly: Assembly-CSharp
     fullTypeName: GameOver
     methodName: MainMenu
@@ -348,6 +352,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: ChatManager
     methodName: SubmitPublicChatOnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: NetworkNodeUI
+    methodName: Sell
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: QuitGame
@@ -361,13 +368,13 @@ ScriptsOnlyBuild:
     fullTypeName: ChatManager
     methodName: TypeChatOnValueChange
   - assembly: Assembly-CSharp
+    fullTypeName: NetworkNodeUI
+    methodName: Upgrade
+  - assembly: Assembly-CSharp
     fullTypeName: GameWin
     methodName: LevelGTDLobby
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectdogTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
     methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
@@ -378,6 +385,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
     methodName: ContinueGame
@@ -413,19 +423,19 @@ ScriptsOnlyBuild:
     methodName: Upgrade
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectdogTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
     methodName: SelectrobotTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectfishTurret
+    methodName: SelectcatTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectdogTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectcatTurret
+    methodName: SelectfishTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameOver
     methodName: Retry
@@ -461,19 +471,19 @@ ScriptsOnlyBuild:
     methodName: Retry
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
+    methodName: SelectrobotTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
+    methodName: SelectfishTurret
+  - assembly: Assembly-CSharp
+    fullTypeName: GameShop
     methodName: SelectsnakeTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
     methodName: SelectcatTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameShop
-    methodName: SelectfishTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
     methodName: SelectdogTurret
-  - assembly: Assembly-CSharp
-    fullTypeName: GameShop
-    methodName: SelectrobotTurret
   - assembly: Assembly-CSharp
     fullTypeName: GameOver
     methodName: MainMenu

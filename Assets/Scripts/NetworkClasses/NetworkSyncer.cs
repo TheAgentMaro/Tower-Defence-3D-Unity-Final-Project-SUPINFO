@@ -5,24 +5,20 @@ using UnityEngine;
 
 public class NetworkSyncer : MonoBehaviourPun, IPunObservable
 {
-    // References to other scripts or components
     public WavesUI wavesUI;
     public LivesUI livesUI;
     public MoneyUI moneyUI;
 
-    // References to spawn points and nodes
     public List<Transform> spawnPoints;
     public GameObject networkedNodesObject;
     private List<NodesNetwork> nodes;
 
-    // Index of the assigned spawn point for the local player
     private int assignedSpawnPointIndex = -1;
 
     private void Start()
     {
         if (photonView.IsMine)
         {
-            // Assign a spawn point to the local player
             AssignSpawnPoint();
         }
     }
@@ -43,7 +39,6 @@ public class NetworkSyncer : MonoBehaviourPun, IPunObservable
             stream.SendNext(PlayerStats.waves);
             stream.SendNext(PlayerStats.lives);
 
-            // Nodes and turrets
             foreach (NodesNetwork node in nodes)
             {
                 stream.SendNext(node.transform.position);
@@ -60,7 +55,6 @@ public class NetworkSyncer : MonoBehaviourPun, IPunObservable
             PlayerStats.waves = (int)stream.ReceiveNext();
             PlayerStats.lives = (int)stream.ReceiveNext();
 
-            // Nodes and turrets
             for (int i = 0; i < nodes.Count; i++)
             {
                 Vector3 nodePosition = (Vector3)stream.ReceiveNext();
