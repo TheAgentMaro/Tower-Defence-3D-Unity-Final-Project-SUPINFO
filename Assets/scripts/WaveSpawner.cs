@@ -28,7 +28,6 @@ public class WaveSpawner : MonoBehaviour
 
     void Start()
     {
-        // Deactivate the win game UI at the start
         winGameUI.SetActive(false);
     }
 
@@ -36,7 +35,6 @@ public class WaveSpawner : MonoBehaviour
     {
         if (isWinGame)
         {
-            // Handle win game state
             ShowWinGameMenu();
             return;
         }

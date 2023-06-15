@@ -1,24 +1,24 @@
 ﻿using Photon.Pun;
+using Photon.Realtime;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NetworkSyncer : MonoBehaviourPunCallbacks, IPunObservable
+public class NetworkSyncer : MonoBehaviourPun, IPunObservable
 {
-    public GameManager gm;
-    public WavesUI ws;
-    public LivesUI lu;
-    public MoneyUI mon;
-    public GameShop gameShop;
+    // References to other scripts or components
+    public WavesUI wavesUI;
+    public LivesUI livesUI;
+    public MoneyUI moneyUI;
 
-
-    // list of spawn points
+    // References to spawn points and nodes
     public List<Transform> spawnPoints;
+    public GameObject networkedNodesObject;
+    private List<NodesNetwork> nodes;
 
-    // variable to store the player's assigned spawn point index
+    // Index of the assigned spawn point for the local player
     private int assignedSpawnPointIndex = -1;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         if (photonView.IsMine)
         {
@@ -27,8 +27,7 @@ public class NetworkSyncer : MonoBehaviourPunCallbacks, IPunObservable
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
     }
@@ -37,38 +36,49 @@ public class NetworkSyncer : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (stream.IsWriting)
         {
+            // Send necessary data to other players
+
+            // Player stats
             stream.SendNext(PlayerStats.money);
-
-            // Wave Spawner:
             stream.SendNext(PlayerStats.waves);
-
-            // Lives UI:
             stream.SendNext(PlayerStats.lives);
 
-            stream.SendNext(gameShop.dogTurret);
-            stream.SendNext(gameShop.robotTurret);
-            stream.SendNext(gameShop.catTurret);
-            stream.SendNext(gameShop.fishTurret);
-            stream.SendNext(gameShop.snakeTurret);
-
-            if (photonView.IsMine)
+            // Nodes and turrets
+            foreach (NodesNetwork node in nodes)
             {
-                stream.SendNext(assignedSpawnPointIndex);
+                stream.SendNext(node.transform.position);
+                stream.SendNext(node.HasTurret);
             }
+
         }
         else
         {
-            PlayerStats.lives = (int)stream.ReceiveNext();
-            PlayerStats.waves = (int)stream.ReceiveNext();
+            // Receive data from the owner player
+
+            // Player stats
             PlayerStats.money = (int)stream.ReceiveNext();
-            gameShop.dogTurret = (gameTurretBluePrint)stream.ReceiveNext();
-            gameShop.robotTurret = (gameTurretBluePrint)stream.ReceiveNext();
-            gameShop.catTurret = (gameTurretBluePrint)stream.ReceiveNext();
-            gameShop.fishTurret = (gameTurretBluePrint)stream.ReceiveNext();
-            gameShop.snakeTurret = (gameTurretBluePrint)stream.ReceiveNext();
-            if (!photonView.IsMine)
+            PlayerStats.waves = (int)stream.ReceiveNext();
+            PlayerStats.lives = (int)stream.ReceiveNext();
+
+            // Nodes and turrets
+            for (int i = 0; i < nodes.Count; i++)
             {
-                assignedSpawnPointIndex = (int)stream.ReceiveNext();
+                Vector3 nodePosition = (Vector3)stream.ReceiveNext();
+                bool hasTurret = (bool)stream.ReceiveNext();
+
+                NodesNetwork node = nodes[i];
+                node.transform.position = nodePosition;
+
+                if (hasTurret && !node.HasTurret)
+                {
+                    // Build turret
+                    node.BuildTurret();
+                }
+                else if (!hasTurret && node.HasTurret)
+                {
+                    // Destroy turret
+                    node.DestroyTurret();
+                }
             }
         }
     }
@@ -77,14 +87,16 @@ public class NetworkSyncer : MonoBehaviourPunCallbacks, IPunObservable
     {
         if (spawnPoints.Count > 0)
         {
-            assignedSpawnPointIndex++;
+            assignedSpawnPointIndex = (assignedSpawnPointIndex + 1) % spawnPoints.Count;
 
-            assignedSpawnPointIndex %= spawnPoints.Count;
-
-            // Set the player's spawn point to the assigned spawn point
             Transform assignedSpawnPoint = spawnPoints[assignedSpawnPointIndex];
             transform.position = assignedSpawnPoint.position;
             transform.rotation = assignedSpawnPoint.rotation;
         }
+    }
+
+    private void Awake()
+    {
+        nodes = new List<NodesNetwork>(networkedNodesObject.GetComponentsInChildren<NodesNetwork>());
     }
 }

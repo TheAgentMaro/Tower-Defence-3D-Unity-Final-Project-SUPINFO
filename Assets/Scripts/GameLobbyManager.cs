@@ -84,11 +84,11 @@ public class GameLobbyManager : MonoBehaviour
 
         if (selectedGameMode == "GTD")
         {
-            sceneName = "GGame"; // Replace with the actual scene name for GTD mode
+            sceneName = "GGame";
         }
         else if (selectedGameMode == "GTCD")
         {
-            sceneName = "GCGame"; // Replace with the actual scene name for GTCD mode
+            sceneName = "GCGame"; 
         }
         else
         {

@@ -129,7 +129,6 @@ namespace Assets.Scripts.NetworkClasses
         public override void OnDisconnected(DisconnectCause cause)
         {
             progressLabel.SetActive(false);
-            //controlPanel.SetActive(true);
             //Retourner un message pour la déconnexion:
             Debug.LogWarningFormat("PUN Basics Tutorial/Launcher: OnDisconnected() was called by PUN with reason {0}", cause);
         }
@@ -206,7 +205,6 @@ namespace Assets.Scripts.NetworkClasses
 
         public void LeaveRoom()
         {
-            Debug.Log("Leaving room");
             PhotonNetwork.LeaveRoom();
         }
 

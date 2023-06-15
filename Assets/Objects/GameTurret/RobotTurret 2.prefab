@@ -434,6 +434,7 @@ GameObject:
   - component: {fileID: 3069176666748910175}
   - component: {fileID: 8629450502627906571}
   - component: {fileID: 2866651804918263774}
+  - component: {fileID: 3146814438722604090}
   m_Layer: 0
   m_Name: RobotTurret 2
   m_TagString: Untagged
@@ -534,11 +535,33 @@ MonoBehaviour:
   target: {fileID: 0}
   range: 30
   enemyTag: gameEnemie
-  atkspd: 1
+  attackSpeed: 1
   tourellePlaceHolder: {fileID: 1838594560144011118}
   bulletPrefab: {fileID: 7191142631725986352, guid: 7fbd514a4c0ee744d963feebdeed3603,
     type: 3}
   canon: {fileID: 1029264219731618834}
+--- !u!114 &3146814438722604090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062002405414016880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 1
+  OwnershipTransfer: 1
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &2783621987608645123
 GameObject:
   m_ObjectHideFlags: 0

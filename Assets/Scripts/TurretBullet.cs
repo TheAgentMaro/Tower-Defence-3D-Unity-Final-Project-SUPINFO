@@ -7,7 +7,7 @@ public class gameTurretBullet : MonoBehaviour
     public float playerSpeed = 70;
     public float Radius = 0f;
     public int takeDamage = 20;
-    public bool type = false; //false = phys true = mag
+    public bool type = false; 
     public void Seek(Transform _target)
     {
         enemyTarget = _target;

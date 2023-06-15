@@ -138,7 +138,7 @@ public class WaveSpawnerGCTD : MonoBehaviour
 
         return maxWaveCount;
     }
-
+    
     float GetNextWaveRate()
     {
         if (currentWaveIndex < spawningPoints.Count)

@@ -152,10 +152,9 @@ public class GameOptions : MonoBehaviour
     public void WriteSettingsToFile()
     {
         SetUsername(UserNameInput.text);
-        /*
-        PlayerPrefs.SetInt("Resolution", resolutionDropdown.value);*/
+        
+        PlayerPrefs.SetInt("Resolution", resolutionDropdown.value);
 
-        // Save volume
         PlayerPrefs.SetFloat("Volume", audioSource.volume);
 
         PlayerPrefs.Save();

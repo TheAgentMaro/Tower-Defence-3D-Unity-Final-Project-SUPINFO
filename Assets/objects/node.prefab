@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8620460445588348627}
   - component: {fileID: 5741764666616540736}
   - component: {fileID: 7992801642534311543}
-  - component: {fileID: 4383713943889748469}
+  - component: {fileID: 8599875136409974044}
   m_Layer: 0
   m_Name: node
   m_TagString: Untagged
@@ -30,9 +30,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 1, z: 4}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8620460445588348627
 MeshFilter:
@@ -53,10 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +84,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &7992801642534311543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -89,12 +93,20 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2899511125150990485}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4383713943889748469
+--- !u!114 &8599875136409974044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,10 +115,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2899511125150990485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e399a18708e744bbfc269310b5755d, type: 3}
+  m_Script: {fileID: 11500000, guid: bb4eca8a503a9bd468e4997aebcdd933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverColorConstrucON: {r: 0, g: 0.46226418, b: 0.020547993, a: 0}
-  hoverColorConstrucOFF: {r: 0.4433962, g: 0, b: 0, a: 0}
-  baseColor: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 0}
+  hoverColorConstrucON: {r: 0, g: 0.46274513, b: 0.019607844, a: 0}
+  hoverColorConstrucOFF: {r: 0.4431373, g: 0, b: 0, a: 0}
+  baseColor: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 0}
+  constructed: 0
+  gameTurret: {fileID: 0}
+  gameTurretbp:
+    prefab: {fileID: 0}
+    cost: 0
+    upgradedprefab: {fileID: 0}
+    upgradeCost: 0
+    index: 0
+  upgradeLV: 0
   offset: {x: 0, y: 1.5, z: 0}

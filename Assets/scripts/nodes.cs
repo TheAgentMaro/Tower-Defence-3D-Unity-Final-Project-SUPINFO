@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 public class Nodes : MonoBehaviour
 {
@@ -35,14 +36,14 @@ public class Nodes : MonoBehaviour
         }
         if(constructed)
         {
-            buildManager.Selectnode(this);
+            buildManager.SelectNode(this);
         }
         if (!buildManager.canBuild)
         {
             return;
         }
 
-        BuildgameTurret(buildManager.GetgameTurretblueprint());
+        BuildgameTurret(buildManager.GetGameTurretBlueprint());
     }
 
     private void OnMouseEnter()
@@ -113,4 +114,16 @@ public class Nodes : MonoBehaviour
 
         
     }
+
+    public static List<Vector3> GetAllNodePositions()
+    {
+        Nodes[] allNodes = FindObjectsOfType<Nodes>();
+        List<Vector3> positions = new List<Vector3>();
+        foreach (Nodes node in allNodes)
+        {
+            positions.Add(node.transform.position);
+        }
+        return positions;
+    }
+
 }
