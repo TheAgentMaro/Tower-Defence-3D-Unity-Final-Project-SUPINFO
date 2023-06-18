@@ -803,30 +803,6 @@
       "DebugActionIndex": 41
     },
     {
-      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets10.assets.resS",
-      "DisplayName": "Copying sharedassets10.assets.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets10.assets.resS"
-      ],
-      "Outputs": [
-        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets10.assets.resS"
-      ],
-      "DebugActionIndex": 42
-    },
-    {
-      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets10.resource",
-      "DisplayName": "Copying sharedassets10.resource",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets10.resource"
-      ],
-      "Outputs": [
-        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets10.resource"
-      ],
-      "DebugActionIndex": 43
-    },
-    {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets11.assets",
       "DisplayName": "Copying sharedassets11.assets",
       "ActionType": "CopyFiles",
@@ -836,7 +812,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets11.assets"
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets12.assets",
@@ -848,7 +824,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets12.assets"
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets2.assets",
@@ -860,7 +836,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets2.assets"
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets3.assets",
@@ -872,7 +848,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets3.assets"
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets4.assets",
@@ -884,7 +860,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets4.assets"
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets4.assets.resS",
@@ -896,7 +872,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets4.assets.resS"
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets5.assets",
@@ -908,7 +884,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets5.assets"
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.assets",
@@ -920,7 +896,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.assets"
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.assets.resS",
@@ -932,7 +908,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.assets.resS"
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.resource",
@@ -944,7 +920,7 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets6.resource"
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.assets",
@@ -955,6 +931,30 @@
       ],
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.assets"
+      ],
+      "DebugActionIndex": 52
+    },
+    {
+      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.assets.resS",
+      "DisplayName": "Copying sharedassets7.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets7.assets.resS"
+      ],
+      "Outputs": [
+        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.assets.resS"
+      ],
+      "DebugActionIndex": 53
+    },
+    {
+      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.resource",
+      "DisplayName": "Copying sharedassets7.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets7.resource"
+      ],
+      "Outputs": [
+        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets7.resource"
       ],
       "DebugActionIndex": 54
     },
@@ -971,6 +971,30 @@
       "DebugActionIndex": 55
     },
     {
+      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets8.assets.resS",
+      "DisplayName": "Copying sharedassets8.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets8.assets.resS"
+      ],
+      "Outputs": [
+        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets8.assets.resS"
+      ],
+      "DebugActionIndex": 56
+    },
+    {
+      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets8.resource",
+      "DisplayName": "Copying sharedassets8.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets8.resource"
+      ],
+      "Outputs": [
+        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets8.resource"
+      ],
+      "DebugActionIndex": 57
+    },
+    {
       "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.assets",
       "DisplayName": "Copying sharedassets9.assets",
       "ActionType": "CopyFiles",
@@ -980,30 +1004,6 @@
       "Outputs": [
         "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.assets"
       ],
-      "DebugActionIndex": 56
-    },
-    {
-      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.assets.resS",
-      "DisplayName": "Copying sharedassets9.assets.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets9.assets.resS"
-      ],
-      "Outputs": [
-        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.assets.resS"
-      ],
-      "DebugActionIndex": 57
-    },
-    {
-      "Annotation": "CopyFiles C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.resource",
-      "DisplayName": "Copying sharedassets9.resource",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets9.resource"
-      ],
-      "Outputs": [
-        "C:/Git/TowerDefence 3D - 2PROJ/GameBuild/Anblisoft -SupinfoTD_Data/sharedassets9.resource"
-      ],
       "DebugActionIndex": 58
     },
     {
@@ -1011,7 +1011,7 @@
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 20851,
+      "PayloadLength": 20849,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "Outputs": [
@@ -1067,8 +1067,6 @@
         "Library/PlayerDataCache/Win64/Data/sharedassets1.assets",
         "Library/PlayerDataCache/Win64/Data/sharedassets1.assets.resS",
         "Library/PlayerDataCache/Win64/Data/sharedassets10.assets",
-        "Library/PlayerDataCache/Win64/Data/sharedassets10.assets.resS",
-        "Library/PlayerDataCache/Win64/Data/sharedassets10.resource",
         "Library/PlayerDataCache/Win64/Data/sharedassets11.assets",
         "Library/PlayerDataCache/Win64/Data/sharedassets12.assets",
         "Library/PlayerDataCache/Win64/Data/sharedassets2.assets",
@@ -1080,10 +1078,12 @@
         "Library/PlayerDataCache/Win64/Data/sharedassets6.assets.resS",
         "Library/PlayerDataCache/Win64/Data/sharedassets6.resource",
         "Library/PlayerDataCache/Win64/Data/sharedassets7.assets",
+        "Library/PlayerDataCache/Win64/Data/sharedassets7.assets.resS",
+        "Library/PlayerDataCache/Win64/Data/sharedassets7.resource",
         "Library/PlayerDataCache/Win64/Data/sharedassets8.assets",
+        "Library/PlayerDataCache/Win64/Data/sharedassets8.assets.resS",
+        "Library/PlayerDataCache/Win64/Data/sharedassets8.resource",
         "Library/PlayerDataCache/Win64/Data/sharedassets9.assets",
-        "Library/PlayerDataCache/Win64/Data/sharedassets9.assets.resS",
-        "Library/PlayerDataCache/Win64/Data/sharedassets9.resource",
         "C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.dll",
         "C:/Program Files/Unity/Hub/Editor/2022.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AccessibilityModule.dll",
@@ -3799,7 +3799,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 21023,
+      "PayloadOffset": 21021,
       "PayloadLength": 30,
       "PayloadDebugContentSnippet": "Anblisoft\nAnblisoft -SupinfoTD",
       "Inputs": [],

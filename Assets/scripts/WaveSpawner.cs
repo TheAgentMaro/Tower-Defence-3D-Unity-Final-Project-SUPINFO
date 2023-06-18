@@ -85,4 +85,12 @@ public class WaveSpawner : MonoBehaviour
     {
         winGameUI.SetActive(true);
     }
+
+    public void ResetWaveSpawner()
+    {
+        StopAllCoroutines();
+        enemiesAlive = 0;
+        WaveCount = 0;
+        isWinGame = false;
+    }
 }

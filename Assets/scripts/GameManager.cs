@@ -31,4 +31,8 @@ public class GameManager : MonoBehaviour
         end = true;
         
     }
+    public void ResetGameManager()
+    {
+        end = false;
+    }
 }

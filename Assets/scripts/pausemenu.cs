@@ -1,6 +1,8 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Photon.Pun.Demo.PunBasics;
+
 public class PauseMenu : MonoBehaviour
 {
    
@@ -12,11 +14,19 @@ public class PauseMenu : MonoBehaviour
     public GameObject gameOverUI;
     public GameObject pauseUI;
 
+    private GameManager gameManager;
+    private WaveSpawner waveSpawner;
+
     bool gamePause = false;
     public string menuScene = "Menu";
 
     bool isEscapePressed = false; //bool to check if escape key is pressed
 
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        waveSpawner = FindObjectOfType<WaveSpawner>();
+    }
 
     void Update()
     {
@@ -73,6 +83,31 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         ui.SetActive(false);
+        ResetGameState();
+        ResetUI();
+        gameManager.ResetGameManager();
+        waveSpawner.ResetWaveSpawner();
+        LoadNewScene();
+    }
+
+    public void ResetGameState()
+    {
+        PlayerStats.money = PlayerStats.startMoney;
+        PlayerStats.lives = PlayerStats.startLives;
+        PlayerStats.rounds = 0;
+    }
+
+    public void ResetUI()
+    {
+        moneyUI.SetActive(true);
+        liveUI.SetActive(true);
+        waveTimerUI.SetActive(true);
+        shopUI.SetActive(true);
+        gameOverUI.SetActive(false);
+        pauseUI.SetActive(false);
+    }
+    public void LoadNewScene()
+    {
         SceneManager.LoadScene(menuScene);
     }
 
